@@ -3,7 +3,7 @@ body {
     color: white; /* Texte en blanc */
     margin: 0; /* Supprime les marges par dÃ©faut du corps */
     font-family: "Arial Narrow", sans-serif; /* Change la police en Arial Narrow, ou sans-serif si Arial pas dispo*/
-    background : url(projet-siteweb/site-berserk/img/Berserk-Guts-simple-simple-background-minimalism-1982683-wallhere.com.jpg)  fixed no-repeat;
+    background : url('/projet-siteweb/site-berserk/img/berserkfond.jpg')  fixed no-repeat;
      background-size: 100%;
     
 }
