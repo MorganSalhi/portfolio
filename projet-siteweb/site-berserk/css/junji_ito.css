@@ -80,7 +80,7 @@ a:hover {
 
 /* Styles de la section avec image de fond */
 .content {
-    background-image: url('../img/junjiitofond.jpg');
+    background-image: url('/projet-siteweb/site-berserk/img/junjiitofond.jpg');
     background-size: cover; /* Ajuste la taille de l'image Ã  la fenÃªtre */
     background-attachment: fixed; /* Fixe l'image de fond */
     background-position: center; /* Centre l'image de fond */

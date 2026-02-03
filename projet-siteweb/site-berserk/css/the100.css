@@ -71,7 +71,7 @@ body {
   background-color: black;
 }
 body {
-    background: url('../img/the100fond.jpg') no-repeat center center fixed;
+    background: url('/projet-siteweb/site-berserk/img/the100fond.jpg') no-repeat center center fixed;
     background-size: cover;
     /* Autres styles de votre page */
   }
