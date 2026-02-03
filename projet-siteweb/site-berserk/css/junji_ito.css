@@ -1,0 +1,153 @@
+body {
+    background-color: rgb(24, 21, 21);  /* Fond noir */
+    color: white; /* Texte en blanc */
+    margin: 0; /* Supprime les marges par dÃ©faut du corps */
+    padding: 0;
+    font-family: "Arial Narrow", sans-serif; /* Change la police en Arial Narrow, ou sans-serif si Arial pas dispo*/
+}
+p {
+    font-size: 19px; /* Taille du texte */
+}
+h1 {
+    font-family: "Courier New", monospace; /* Courier New pour les titres, ou monospace*/
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.808); /* Ajoute une ombre */
+}
+h2, h3, h4, h5, h6{
+    font-family: "Arial Narrow", sans-serif;  /* "Arial Narrow" ou sans-serif */
+    color:#ffffff;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.808); 
+}
+.header {
+    background-color: #501010; /* Couleur de fond pour la barre en haut */
+    padding: 40px; /* Espacement intÃ©rieur pour la barre en haut */
+    text-align: center; /* Centre le contenu de la barre en haut */
+    box-shadow: 0 0 5px rgba(83, 78, 78, 0.308); /* Ajoute une ombre floue Ã  la boÃ®te */
+}
+ul { /* Pour Ã©viter que la barre dÃ©borde sur le titre */ 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: inline; /* Affiche les Ã©lÃ©ments de liste horizontalement */
+    margin-right: 10%; /* Espace entre les Ã©lÃ©ments de liste */
+}
+a {  /* Pour enlever les soulignements de la barre de nav */
+    text-decoration: none; /* Supprime les soulignements par dÃ©faut des liens */
+    color: #fff; /* Couleur du texte des liens */
+}
+.b { /* Change la couleur des liens dans le texte */
+    color: #8c7dd3;
+}
+a:hover {
+    text-decoration: underline; /* Effet de soulignement au survol tant que c'est pas la barre de navigation*/
+}
+#content { /* Applique une marge supÃ©rieure au contenu suivant la barre pour Ã©viter le chevauchement */
+    margin-top: 80px; 
+}
+
+/* Pour la barre de navigation : */
+.navbar-container {
+    background-color: #581111; /* Couleur de fond */
+    padding: 10px 0; /* Espace intÃ©rieur en haut et en bas de la barre */
+    position: fixed; /* Fixe la barre en haut */
+    width: 100%; /* Occupe toute la largeur de la fenÃªtre */
+    top: 0; 
+    z-index: 1000; /* Assure que la barre est au-dessus d'autres Ã©lÃ©ments */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre Ã  la barre */
+}
+.navbar {
+    max-width: 960px; /* Largeur maximale de la barre de navigation */
+    margin: 0 auto; /* Centrer la barre de navigation horizontalement */
+}
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Espacement Ã©quitable des Ã©lÃ©ments de la barre de navigation */
+}
+.navbar-item {
+    color: #fff; /* Couleur du texte */
+}
+.navbar-item a {
+    text-decoration: none; /* Supprimer le soulignement des liens pour la barre */
+    color: #fff; /* Couleur du texte des liens */
+    transition: color 0.3s; /* Animation de transition de la couleur du texte */
+}
+.navbar-item a:hover {
+    color: #746cd8; /* Couleur du texte au survol */
+}
+
+/* Styles de la section avec image de fond */
+.content {
+    background-image: url('../img/junjiitofond.jpg');
+    background-size: cover; /* Ajuste la taille de l'image Ã  la fenÃªtre */
+    background-attachment: fixed; /* Fixe l'image de fond */
+    background-position: center; /* Centre l'image de fond */
+    color: #fff; /* Couleur du texte */
+    text-align: center;
+    padding: 100px 0; /* Espace intÃ©rieur en haut et en bas de la section */
+    display: flex; /* Conteneur flex */
+    justify-content: center; /* Centre horizontalement les Ã©lÃ©ments */
+}
+
+/* Styles des boÃ®tes de texte */
+.box {
+    background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond semi-transparente */
+    color: #fff; /* Couleur du texte */
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre douce */
+    width: 40%; /* Largeur de chaque boÃ®te */
+    text-align: center;
+    margin: 10px; /* Ajoute de la marge entre les boÃ®tes */
+}
+
+.jb {
+    display: block;
+    margin: 0 auto; /* Centre horizontalement */
+    max-width: 100%; /* Pour que l'image soit proportionnelle Ã  la fenÃªtre */
+    width: 300px; /* Largeur souhaitÃ©e */
+    height: auto; /* Laisse la hauteur s'ajuster proportionnellement */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+}
+
+.encadre-titre1 {
+    padding: 10px; /* Espace intÃ©rieur */
+    display: inline-block; /* Permet Ã  la bordure de s'adapter Ã  la largeur du contenu */
+    background-color: #ff21aa83; /* Couleur du fond*/
+}
+
+.encadre-titre2 {
+    padding: 10px; /* Espace intÃ©rieur */
+    display: inline-block; /* Permet Ã  la bordure de s'adapter Ã  la largeur du contenu */
+    background-color: #967eff85; /* Couleur du fond*/
+}
+
+.encadre-titre3 {
+    padding: 10px; /* Espace intÃ©rieur */
+    display: inline-block; /* Permet Ã  la bordure de s'adapter Ã  la largeur du contenu */
+    background-color: #0d420c7e; /* Couleur du fond*/
+}
+
+.encadre-titre4 {
+    padding: 10px; /* Espace intÃ©rieur */
+    display: inline-block; /* Permet Ã  la bordure de s'adapter Ã  la largeur du contenu */
+    background-color: #4f44f07e; /* Couleur du fond*/
+}
+
+.encadre-titre5 {
+    padding: 10px; /* Espace intÃ©rieur */
+    display: inline-block; /* Permet Ã  la bordure de s'adapter Ã  la largeur du contenu */
+    background-color: #50101083; /* Couleur du fond*/
+}
+
+img:hover{ /* Effet Zoom */
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.3);
+}
+@media screen and (max-width: 767px) { /* Responsive design */
+    .box {width: 70%;} /*Taille des box sur tÃ©lÃ©phone*/
+}

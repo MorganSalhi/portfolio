@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Thales - Solution "Checklist" | Morgan Salhi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index" class="logo" style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
+                <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index">Accueil</a></li>
+                <li><a href="index#portfolio">Retour aux projets</a></li>
+                <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <span class="tag">Partenariat Thales Alenia Space</span>
+                <h1 class="hero-title">Solution "Checklist"</h1>
+                <p class="project-subtitle">Plateforme de centralisation des bonnes pratiques de tests avioniques</p>
+                
+                <div style="margin-top: 35px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    
+                    <a href="assets/docs/rapport-thales.pdf" target="_blank" class="btn-primary" style="display: flex; align-items: center; gap: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Lire le rapport (PDF)
+                    </a>
+
+                    <a href="construction" class="btn-secondary" style="display: flex; align-items: center; gap: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    Tester la démo live
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details section-padding">
+            <div class="container">
+                
+                <div class="detail-block">
+                    <h2 class="section-title">Contexte et Objectifs</h2>
+                    <p>
+                        Ce projet visait à améliorer la sécurité et l'efficacité des tests avioniques chez <strong>Thales Alenia Space</strong>. 
+                        L'objectif était de concevoir une plateforme sécurisée permettant d'identifier, centraliser et partager les "bonnes pratiques" techniques 
+                        [cite_start]entre les équipes d'ingénieurs[cite: 2025].
+                    </p>
+                    <p>
+                        La solution devait permettre de filtrer ces pratiques par programme, phase de test ou mots-clés, et d'exporter ces données 
+                        [cite_start]pour une utilisation hors ligne[cite: 2026].
+                    </p>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Architecture de la Solution</h2>
+                    [cite_start]<p>Nous avons développé une solution complète composée de deux briques principales[cite: 2049]:</p>
+                    
+                    <ul class="detail-list">
+                        <li>
+                            <strong>Application Web (PHP / JS / CSS) :</strong> Interface utilisateur permettant la création, la recherche et la gestion des bonnes pratiques. 
+                            [cite_start]Elle intègre un système de filtres dynamiques (Programmes, Phases) et une gestion fine des droits (Opérateur, Administrateur, Super-Admin)[cite: 2051, 2318].
+                        </li>
+                        <li>
+                            <strong>Module d'Export Python :</strong> Développement d'un script Python backend dédié à la génération automatique des documents. 
+                            [cite_start]Il permet d'exporter les pratiques sélectionnées aux formats <strong>Excel (.csv)</strong> et <strong>PDF</strong>[cite: 2030, 2054].
+                        </li>
+                        <li>
+                            [cite_start]<strong>Base de Données :</strong> Gestion centralisée via MySQL/phpMyAdmin pour stocker les utilisateurs, les programmes et l'historique des actions[cite: 2056].
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Sécurité et Fonctionnalités Avancées</h2>
+                    [cite_start]<p>Le projet imposait des contraintes de sécurité strictes que nous avons implémentées[cite: 2295, 2297]:</p>
+                    <ul class="detail-list">
+                        <li><strong>Sécurité des accès :</strong> Chiffrement des mots de passe en base de données et blocage automatique du compte après 3 tentatives infructueuses.</li>
+                        [cite_start]<li><strong>Traçabilité :</strong> Mémorisation des actions utilisateurs (Logs) pour l'investigation (Date, Utilisateur, Type d'action)[cite: 2399].</li>
+                        <li><strong>Rôles Hiérarchisés :</strong> 
+                            <ul>
+                                <li><em>Opérateur :</em> Consultation et export.</li>
+                                [cite_start]<li><em>Administrateur :</em> Gestion des comptes et des programmes[cite: 2360].</li>
+                                [cite_start]<li><em>Super-Admin :</em> Gestion des administrateurs et droits étendus[cite: 2372].</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-gallery">
+                    <h2 class="section-title">Interface Utilisateur</h2>
+                    <div class="image-wrapper">
+                        <img src="assets/img/maquette-thales.png" alt="Maquette de l'interface Thales">
+                        <p class="caption">Figure 11 : Maquette de la page d'accueil de la solution (Extrait du rapport)</p>
+                    </div>
+                </div>
+
+                <div class="competencies-box">
+                    <h3>Compétences Techniques</h3>
+                    <div class="tags-container">
+                        <span class="skill-tag">Développement Fullstack</span>
+                        <span class="skill-tag">Scripting Python</span>
+                        <span class="skill-tag">Base de Données SQL</span>
+                        <span class="skill-tag">Chiffrement & Sécurité</span>
+                        <span class="skill-tag">Gestion de Projet (RACI)</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

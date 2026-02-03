@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(24, 21, 21);  /* Fond noir */
+    color: white; /* Texte en blanc */
+    margin: 0; /* Supprime les marges par dÃ©faut du corps */
+    font-family: "Arial Narrow", sans-serif; /* Change la police en Arial Narrow, ou sans-serif si Arial pas dispo*/
+    background : url(../img/Berserk-Guts-simple-simple-background-minimalism-1982683-wallhere.com.jpg)  fixed no-repeat;
+     background-size: 100%;
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Courier New", monospace; /* Courier New pour les titres, ou monospace*/
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.808); /* Ajoute une ombre */
+}
+.header {
+    background-color: #501010; /* Couleur de fond pour la barre en haut */
+    padding: 40px; /* Espacement intÃ©rieur pour la barre en haut */
+    text-align: center; /* Centre le contenu de la barre en haut */
+    box-shadow: 0 0 5px rgba(83, 78, 78, 0.308); /* Ajoute une ombre floue Ã  la boÃ®te */
+}
+ul { /* Pour Ã©viter que la barre dÃ©borde sur le titre */ 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: inline; /* Affiche les Ã©lÃ©ments de liste horizontalement */
+    margin-right: 10%; /* Espace entre les Ã©lÃ©ments de liste */
+}
+a { /* Si l'on met des liens */
+    text-decoration: none; /* Supprime les soulignements par dÃ©faut des liens */
+    color: #fff; /* Couleur du texte des liens */
+}
+a:hover {
+    text-decoration: underline; /* Effet de soulignement au survol */
+}
+
+#content { /* Applique une marge supÃ©rieure au contenu suivant la barre pour Ã©viter le chevauchement */
+    margin-top: 80px; /* Ajuste la valeur en fonction de la hauteur de votre barre de navigation */
+}
+
+/* Pour la barre de navigation : */
+.navbar-container {
+    background-color: #581111; /* Couleur de fond */
+    padding: 10px 0; /* Espace intÃ©rieur en haut et en bas de la barre */
+    position: fixed; /* Fixe la barre en haut */
+    width: 100%; /* Occupe toute la largeur de la fenÃªtre */
+    top: 0; 
+    z-index: 1000; /* Assure que la barre est au-dessus d'autres Ã©lÃ©ments */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre Ã  la barre */
+}
+.navbar {
+    max-width: 960px; /* Largeur maximale de la barre de navigation */
+    margin: 0 auto; /* Centrer la barre de navigation horizontalement */
+}
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Espacement Ã©quitable des Ã©lÃ©ments de la barre de navigation */
+}
+.navbar-item {
+    color: #fff; /* Couleur du texte */
+}
+.navbar-item a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: #fff; /* Couleur du texte des liens */
+    transition: color 0.3s; /* Animation de transition de la couleur du texte */
+}
+.navbar-item a:hover {
+    color: #746cd8; /* Couleur du texte au survol */
+}
+
+.aumilieu {
+    text-align: center;
+}
+
+.image1{
+    margin-left: 39.5%;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column img {
+    margin: 5PX;
+}
+
+.couleurici {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: cover; 
+        background-color: black;
+        background-image: none;
+    }
+    .header {
+        padding: 20px; 
+    }
+    ul {
+        text-align: center; 
+    }
+    li {
+        display: block; 
+        margin: 10px 0; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-list {
+        flex-direction: row; 
+    }
+    .navbar-item {
+        text-align: center; 
+        margin: 0px 0; 
+    }
+    .image1 {
+        margin-left: 0; 
+    }
+    .column {
+        display: block;
+    }
+}
+

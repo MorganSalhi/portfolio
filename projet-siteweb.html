@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web Collaboratif | Morgan Salhi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index" class="logo" style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
+                <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index">Accueil</a></li>
+                <li><a href="index#portfolio">Retour aux projets</a></li>
+                <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <span class="tag">HTML5 & CSS3</span>
+                <h1 class="hero-title">Site Web "Nos Passions"</h1>
+                <p class="project-subtitle">Développement collaboratif d'un site vitrine multi-thématique</p>
+                
+                <div style="margin-top: 35px; display: flex; justify-content: center;">
+                    <a href="projet-siteweb/site-berserk/index.html" target="_blank" class="btn-primary" style="display: flex; align-items: center; gap: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        Visiter le site web
+                    </a>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <section class="project-details section-padding">
+            <div class="container">
+                
+                <div class="detail-block">
+                    <h2 class="section-title">Contexte du projet</h2>
+                    <p>
+                        Réalisé lors de ma première année de BUT Réseaux & Télécommunications, ce projet avait pour but de maîtriser les fondamentaux du développement web. 
+                        Le défi était de concevoir un site web complet <strong>sans utiliser de constructeurs de pages (CMS) ni de frameworks</strong>, en écrivant 100% du code à la main.
+                    </p>
+                    <p>
+                        En équipe de trois, nous avons choisi de créer une plateforme regroupant nos passions respectives : <strong>Les séries et les Mangas</strong>.
+                    </p>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Approche Technique & Collaboration</h2>
+                    <p>
+                        Ce projet a été l'occasion d'apprendre à structurer une page web et à la styliser proprement :
+                    </p>
+                    <ul class="detail-list">
+                        <li>
+                            <strong>Structure Sémantique (HTML5) :</strong> Utilisation des balises modernes (header, nav, section, article, footer) pour assurer une bonne hiérarchie du contenu.
+                        </li>
+                        <li>
+                            <strong>Design & Mise en page (CSS3) :</strong> Création d'une identité visuelle cohérente malgré les thèmes différents. Utilisation de Flexbox pour la mise en page et les menus de navigation.
+                        </li>
+                        <li>
+                            <strong>Travail d'équipe :</strong> Répartition des tâches par "pages thématiques" et unification du code pour assurer une navigation fluide entre les différentes sections du site.
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="divider">
+
+                <div class="project-gallery">
+                    <h2 class="section-title">Aperçu du site</h2>
+                    <div class="image-wrapper">
+                        <img src="assets/img/siteweb.png" alt="Aperçu du site web Passions">
+                        <p class="caption">Page d'accueil présentant les trois univers (The 100, Junji ito, Berserk)</p>
+                    </div>
+                </div>
+
+                <div class="competencies-box">
+                    <h3>Compétences Acquises</h3>
+                    <div class="tags-container">
+                        <span class="skill-tag">HTML5 Sémantique</span>
+                        <span class="skill-tag">CSS3 (Flexbox)</span>
+                        <span class="skill-tag">Design Web</span>
+                        <span class="skill-tag">Gestion de fichiers</span>
+                        <span class="skill-tag">Travail en équipe</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
