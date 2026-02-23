@@ -468,6 +468,16 @@ img:not(.profile-pic) {
     /* --- TAILLES ET ESPACEMENTS --- */
     .section-padding { padding: 60px 0; }
     .hero-title { font-size: 2.5rem; }
+    .hero-actions {
+        display: flex;
+        flex-direction: column; /* Empile les boutons l'un au-dessus de l'autre */
+        align-items: center;    /* Centre les boutons parfaitement au milieu */
+        gap: 15px;              /* Crée l'espace de séparation exact entre les deux */
+    }
+
+    .btn-secondary {
+        margin-left: 0; /* Annule la marge de gauche du PC qui faussait le centrage */
+    }
     .hero-subtitle { font-size: 1rem; }
 
     /* --- ALIGNEMENTS ANCIENS (À CONSERVER) --- */
