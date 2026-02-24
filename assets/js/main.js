@@ -2,14 +2,39 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Animation de défilement fluide pour les ancres
+    /* --- 1. GESTION DU MENU BURGER --- */
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+    const links = document.querySelectorAll('.nav-links a');
+
+    // On vérifie si le burger existe sur la page avant d'ajouter l'écouteur
+    if (burger) {
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            burger.classList.toggle('active');
+            
+            // Bloque le défilement du corps quand le menu est ouvert
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Ferme le menu automatiquement quand on clique sur un lien
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                burger.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    }
+
+    /* --- 2. DÉFILEMENT FLUIDE (ANCRES) --- */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
 
             if (targetSection) {
+                e.preventDefault();
                 targetSection.scrollIntoView({
                     behavior: 'smooth'
                 });
@@ -17,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 2. Petit effet d'apparition au scroll (Optionnel mais stylé)
+    /* --- 3. EFFET D'APPARITION AU SCROLL --- */
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -25,9 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 entry.target.style.transform = 'translateY(0)';
             }
         });
-    });
+    }, { threshold: 0.1 });
 
-    // On applique l'effet sur les cartes projets et compétences
     const cards = document.querySelectorAll('.project-card, .skill-card');
     cards.forEach(card => {
         card.style.opacity = 0;

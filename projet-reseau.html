@@ -108,29 +108,11 @@
         </section>
     </main>
 
-    <script>
-        const burger = document.querySelector('.burger');
-        const navLinks = document.querySelector('.nav-links');
-        const links = document.querySelectorAll('.nav-links a');
-
-        burger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            burger.classList.toggle('active');
-            if (navLinks.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
-            }
-        });
-
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                burger.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        });
-    </script>
-
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
