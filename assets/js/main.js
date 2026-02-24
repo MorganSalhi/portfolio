@@ -1,7 +1,7 @@
 // assets/js/main.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     /* --- 1. GESTION DU MENU BURGER --- */
     const burger = document.querySelector('.burger');
     const navLinks = document.querySelector('.nav-links');
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         burger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             burger.classList.toggle('active');
-            
+
             // Bloque le défilement du corps quand le menu est ouvert
             document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
         });

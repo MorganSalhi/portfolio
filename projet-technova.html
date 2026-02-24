@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet TechNova - Cybersécurité AD | Morgan Salhi</title>
-    <meta name="description" content="Refonte sécurisée d'une infrastructure Active Directory. Durcissement, Tiering Model, PingCastle et Purple Knight.">
+    <meta name="description"
+        content="Refonte sécurisée d'une infrastructure Active Directory. Durcissement, Tiering Model, PingCastle et Purple Knight.">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" href="/favicon.ico" sizes="48x48">
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
     <link rel="manifest" href="/site.webmanifest">
-    
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
     <header class="header">
         <nav class="navbar container">
-            <a href="index" class="logo" style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
+            <a href="index" class="logo"
+                style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
                 <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
             </a>
             <ul class="nav-links">
@@ -45,7 +51,7 @@
                 <span class="tag">Active Directory & Sécurité</span>
                 <h1 class="hero-title">Modernisation TechNova</h1>
                 <p class="project-subtitle">Durcissement AD & Architecture Zero Trust</p>
-                
+
                 <div style="margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
                     <a href="assets/docs/technova-sujet.pdf" target="_blank" class="btn-secondary" style="margin: 0;">
                         📄 Sujet Client
@@ -53,7 +59,8 @@
                     <a href="assets/docs/rapport-solution.pdf" target="_blank" class="btn-primary" style="margin: 0;">
                         📊 Rapport de Solution
                     </a>
-                    <a href="assets/docs/rapport-technique-poc.pdf" target="_blank" class="btn-secondary" style="margin: 0;">
+                    <a href="assets/docs/rapport-technique-poc.pdf" target="_blank" class="btn-secondary"
+                        style="margin: 0;">
                         ⚙️ Rapport Technique
                     </a>
                 </div>
@@ -62,14 +69,18 @@
 
         <section class="project-details section-padding">
             <div class="container">
-                
+
                 <div class="detail-block">
                     <h2 class="section-title">Contexte et Objectifs</h2>
                     <p>
-                        Dans le cadre d'une réponse à appel d'offres pour <strong>TechNova</strong>, une PME internationale de 650 collaborateurs, notre équipe (simulant une ESN nommée Intégris) a été chargée de concevoir la refonte complète et sécurisée de leur infrastructure IT.
+                        Dans le cadre d'une réponse à appel d'offres pour <strong>TechNova</strong>, une PME
+                        internationale de 650 collaborateurs, notre équipe (simulant une ESN nommée Intégris) a été
+                        chargée de concevoir la refonte complète et sécurisée de leur infrastructure IT.
                     </p>
                     <p>
-                        Pour prouver la viabilité de notre solution, nous avons réalisé un <strong>PoC (Proof of Concept) intensif de 10 heures</strong> couvrant la refonte réseau, la virtualisation, la sauvegarde résiliente et la cybersécurité globale de l'entreprise.
+                        Pour prouver la viabilité de notre solution, nous avons réalisé un <strong>PoC (Proof of
+                            Concept) intensif de 10 heures</strong> couvrant la refonte réseau, la virtualisation, la
+                        sauvegarde résiliente et la cybersécurité globale de l'entreprise.
                     </p>
                 </div>
 
@@ -77,24 +88,30 @@
 
                 <div class="detail-block">
                     <h2 class="section-title">Mon Rôle : L'Identité au centre de la sécurité</h2>
-                    <p>Au sein de ce projet global, j'ai pris la responsabilité de la partie la plus critique : <strong>l'Active Directory</strong>. L'objectif était de déployer une infrastructure robuste "Secure by Design" :</p>
-                    
+                    <p>Au sein de ce projet global, j'ai pris la responsabilité de la partie la plus critique :
+                        <strong>l'Active Directory</strong>. L'objectif était de déployer une infrastructure robuste
+                        "Secure by Design" :</p>
+
                     <ul class="detail-list">
                         <li>
-                            <strong>Déploiement Haute Disponibilité :</strong> Mise en place de 3 Contrôleurs de Domaine (DC) synchronisés et sécurisés.
+                            <strong>Déploiement Haute Disponibilité :</strong> Mise en place de 3 Contrôleurs de Domaine
+                            (DC) synchronisés et sécurisés.
                         </li>
                         <li>
-                            <strong>Ségrégation des privilèges :</strong> Application stricte du <em>Tiering Model</em> de Microsoft pour cloisonner les accès administratifs.
+                            <strong>Ségrégation des privilèges :</strong> Application stricte du <em>Tiering Model</em>
+                            de Microsoft pour cloisonner les accès administratifs.
                         </li>
                         <li>
-                            <strong>Poste d'Administration Sécurisé :</strong> Implémentation d'un PAW (Privileged Access Workstation) dédié à l'administration des niveaux critiques.
+                            <strong>Poste d'Administration Sécurisé :</strong> Implémentation d'un PAW (Privileged
+                            Access Workstation) dédié à l'administration des niveaux critiques.
                         </li>
                     </ul>
                 </div>
 
                 <div class="project-gallery">
                     <div class="image-wrapper">
-                        <img src="assets/img/architecture-ad.png" alt="Schéma de l'architecture Active Directory et Tiering">
+                        <img src="assets/img/architecture-ad.png"
+                            alt="Schéma de l'architecture Active Directory et Tiering">
                         <p class="caption">Architecture du POC</p>
                     </div>
                 </div>
@@ -104,10 +121,15 @@
                 <div class="detail-block">
                     <h2 class="section-title">Le Défi Technique : La GPO "Fantôme"</h2>
                     <p>
-                        Le durcissement extrême d'un Active Directory (Harden AD) demande une précision chirurgicale. Lors de l'application des stratégies de groupe (GPO) pour sécuriser l'environnement, une règle stricte m'a subitement déconnecté des postes de la paillaisse, bloquant l'accès au lab.
+                        Le durcissement extrême d'un Active Directory (Harden AD) demande une précision chirurgicale.
+                        Lors de l'application des stratégies de groupe (GPO) pour sécuriser l'environnement, une règle
+                        stricte m'a subitement déconnecté des postes de la paillaisse, bloquant l'accès au lab.
                     </p>
                     <p>
-                        <strong>La solution :</strong> J'ai dû analyser les logs en mode hors ligne, isoler la GPO responsable (liée au durcissement des protocoles d'authentification) et ajuster les exceptions finement. Cet exercice de <em>troubleshooting</em> sous la pression du chronomètre du PoC a permis de maintenir l'opérabilité sans sacrifier la sécurité.
+                        <strong>La solution :</strong> J'ai dû analyser les logs en mode hors ligne, isoler la GPO
+                        responsable (liée au durcissement des protocoles d'authentification) et ajuster les exceptions
+                        finement. Cet exercice de <em>troubleshooting</em> sous la pression du chronomètre du PoC a
+                        permis de maintenir l'opérabilité sans sacrifier la sécurité.
                     </p>
                 </div>
 
@@ -115,26 +137,34 @@
 
                 <div class="detail-block">
                     <h2 class="section-title">Résultats de l'Audit de Sécurité</h2>
-                    <p>Pour valider la robustesse de notre implémentation à la fin du PoC, nous avons soumis l'Active Directory à deux des outils d'audit les plus exigeants du marché :</p>
+                    <p>Pour valider la robustesse de notre implémentation à la fin du PoC, nous avons soumis l'Active
+                        Directory à deux des outils d'audit les plus exigeants du marché :</p>
                 </div>
 
-                <div class="project-gallery" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
-                    
+                <div class="project-gallery"
+                    style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
+
                     <div class="image-wrapper" style="flex: 1; min-width: 300px; height: fit-content;">
                         <img src="assets/img/pingcastle.png" alt="Rapport PingCastle avec un score de 0">
                         <p class="caption">Score <strong>PingCastle : 0</strong> (Aucune anomalie critique)</p>
                     </div>
 
                     <div class="image-wrapper" style="flex: 1; min-width: 300px; height: fit-content;">
-                        <img src="assets/img/purpleknight.png" alt="Dashboard Purple Knight avec 96%" style="object-fit: contain;">
+                        <img src="assets/img/purpleknight.png" alt="Dashboard Purple Knight avec 96%"
+                            style="object-fit: contain;">
                         <p class="caption">Score <strong>Purple Knight : 96%</strong> sur l'identité</p>
                     </div>
 
                 </div>
 
-                <div style="background-color: rgba(255, 255, 255, 0.05); border-left: 4px solid var(--color-primary); padding: 15px; margin-top: 15px; margin-bottom: 40px; border-radius: 4px;">
+                <div
+                    style="background-color: rgba(255, 255, 255, 0.05); border-left: 4px solid var(--color-primary); padding: 15px; margin-top: 15px; margin-bottom: 40px; border-radius: 4px;">
                     <p style="margin: 0; font-size: 0.9rem; line-height: 1.6; font-style: italic;">
-                        <strong>* Note technique :</strong> Il est important de souligner qu'atteindre le score théorique de 100% est techniquement impossible dans le contexte d'un déploiement récent (PoC / Lab). Les 4% de pénalités restantes sur le rapport Purple Knight correspondent exclusivement à des alertes liées à la "fraîcheur" de l'installation (historique de rotation des mots de passe, âge des comptes) et non à des défauts de configuration.
+                        <strong>* Note technique :</strong> Il est important de souligner qu'atteindre le score
+                        théorique de 100% est techniquement impossible dans le contexte d'un déploiement récent (PoC /
+                        Lab). Les 4% de pénalités restantes sur le rapport Purple Knight correspondent exclusivement à
+                        des alertes liées à la "fraîcheur" de l'installation (historique de rotation des mots de passe,
+                        âge des comptes) et non à des défauts de configuration.
                     </p>
                 </div>
 
@@ -160,33 +190,7 @@
             <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
         </div>
     </footer>
-
-    <script>
-        const burger = document.querySelector('.burger');
-        const navLinks = document.querySelector('.nav-links');
-        const links = document.querySelectorAll('.nav-links a');
-
-        // Ouvre/Ferme le menu au clic sur le burger
-        burger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            burger.classList.toggle('active');
-            
-            // Bloque le défilement du site quand le menu est ouvert
-            if (navLinks.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Ferme le menu automatiquement quand on clique sur un lien
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                burger.classList.remove('active');
-                document.body.style.overflow = ''; 
-            });
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

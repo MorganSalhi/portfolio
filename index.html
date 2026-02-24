@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:site_name" content="Morgan Salhi">
     <title>Morgan Salhi - Ingénieur Réseaux & Cybersécurité | Portfolio</title>
-    <meta name="description" content="Portfolio de Morgan Salhi, étudiant en 3ème année de BUT R&T. Projets en administration système, réseaux Cisco et cybersécurité.">
+    <meta name="description"
+        content="Portfolio de Morgan Salhi, étudiant en 3ème année de BUT R&T. Projets en administration système, réseaux Cisco et cybersécurité.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -25,21 +29,24 @@
         "url": "https://morgansalhi.fr/"
     }
     </script>
-</head> <body>
+</head>
+
+<body>
 
     <header class="header">
         <nav class="navbar container">
-            <a href="index" class="logo" style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
+            <a href="index" class="logo"
+                style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
                 <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
             </a>
-            
+
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#portfolio">Projets</a></li>
                 <li><a href="#experience">Expériences</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#about">À propos</a></li>
-                
+
                 <li><a href="#contact" class="btn-primary">Me contacter</a></li>
             </ul>
             <div class="burger">
@@ -52,379 +59,308 @@
 
     <main>
         <section id="accueil" class="hero">
-            <div class="hero-overlay"></div> 
+            <div class="hero-overlay"></div>
             <div class="hero-content container">
-        
+
                 <img src="assets/img/morgansalhi.png" alt="Morgan Salhi" class="profile-pic">
-        
+
                 <h1 class="hero-title">Morgan SALHI</h1>
                 <p class="hero-subtitle">En voyageant à travers ce site, vous découvrirez mon univers.</p>
-        
+
                 <div class="hero-intro">
                     <p>
                         Futur <strong>Ingénieur Réseaux & Sécurité</strong>.<br>
                         Actuellement en 3ème année de BUT R&T à Sophia-Antipolis.
                     </p>
                     <div class="hero-actions">
-                        <a href="assets/docs/cvmorgansalhi_alternancesupport.pdf" target="_blank" class="btn-primary">Télécharger mon CV</a>
+                        <a href="assets/docs/cvmorgansalhi_alternancesupport.pdf" target="_blank"
+                            class="btn-primary">Télécharger mon CV</a>
                         <a href="#portfolio" class="btn-secondary">Voir mes projets</a>
                     </div>
                 </div>
             </div>
         </section>
         <section id="portfolio" class="portfolio section-padding">
-        <div class="container">
-            <h2 class="section-title">Mes Projets</h2>
-            
-            <div class="projects-grid">
-                
-                <article class="project-card">
-                    <div class="card-image">
-                        <img src="assets/img/baie_reseau.png" alt="Architecture Réseau Cisco">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-tags">
-                            <span class="tag">Cisco</span>
-                            <span class="tag">Réseau</span>
-                            <span class="tag">Architecture</span>
-                        </div>
-                        <h3 class="card-title">Architecture Réseau Complexe</h3>
-                        <p class="card-desc">
-                            Conception et déploiement d'une architecture réseau communicante et sécurisée à partir d'une topologie initiale. Simulation avancée sous Cisco Packet Tracer.
-                        </p>
-                        <a href="projet-reseau" class="card-link">Voir le détail du projet &rarr;</a>
-                    </div>
-                </article>
+            <div class="container">
+                <h2 class="section-title">Mes Projets</h2>
 
-                <article class="project-card">
-                    <div class="card-image">
-                        <img src="assets/img/Logo_Integris.png" alt="Architecture Active Directory TechNova">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-tags">
-                            <span class="tag">Active Directory</span>
-                            <span class="tag">Tiering Model</span>
-                            <span class="tag">Sécurité</span>
-                        </div>
-                        <h3 class="card-title">Modernisation TechNova</h3>
-                        <p class="card-desc">
-                            Conception sécurisée et durcissement d'une infrastructure Active Directory (Tiering, PAW, PoC intensif). Score d'audit Purple Knight : 96%.
-                        </p>
-                        <a href="projet-technova" class="card-link">Voir le détail du projet &rarr;</a>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="card-image">
-                        <img src="assets/img/thales.webp" alt="Projet Thales" style="object-position: 50% 100%;">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-tags">
-                            <span class="tag">Développement</span>
-                            <span class="tag">Partenariat</span>
-                        </div>
-                        <h3 class="card-title">Partenariat Thales</h3>
-                        <p class="card-desc">
-                            Conception et développement d'une solution technique sur mesure répondant aux exigences spécifiques de Thales. Projet réalisé en équipe agile de trois personnes.
-                        </p>
-                        <a href="projet-thales" class="card-link">En savoir plus &rarr;</a>
-                    </div>
-                </article>
+                <div class="projects-grid">
 
-                <article class="project-card">
-                    <div class="card-image">
-                        <img src="assets/img/android.png" alt="Application Android">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-tags">
-                            <span class="tag">Android Studio</span>
-                            <span class="tag">Java/Kotlin</span>
-                            <span class="tag">Mobile</span>
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="assets/img/baie_reseau.png" alt="Architecture Réseau Cisco">
                         </div>
-                        <h3 class="card-title">App Sociale "Rêves"</h3>
-                        <p class="card-desc">
-                            Développement d'une application Android innovante : un réseau social dédié au partage et à l'exploration des rêves. Gestion de base de données et UX/UI.
-                        </p>
-                        <a href="projet-android" class="card-link">Voir le détail du projet &rarr;</a>
-                    </div>
-                </article>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span class="tag">Cisco</span>
+                                <span class="tag">Réseau</span>
+                                <span class="tag">Architecture</span>
+                            </div>
+                            <h3 class="card-title">Architecture Réseau Complexe</h3>
+                            <p class="card-desc">
+                                Conception et déploiement d'une architecture réseau communicante et sécurisée à partir
+                                d'une topologie initiale. Simulation avancée sous Cisco Packet Tracer.
+                            </p>
+                            <a href="projet-reseau" class="card-link">Voir le détail du projet &rarr;</a>
+                        </div>
+                    </article>
 
-                <article class="project-card">
-                    <div class="card-image">
-                        <img src="assets/img/video-youtube-880x528.webp" alt="Vidéo Cybersécurité">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-tags">
-                            <span class="tag">Cybersécurité</span>
-                            <span class="tag">Vulgarisation</span>
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="assets/img/Logo_Integris.png" alt="Architecture Active Directory TechNova">
                         </div>
-                        <h3 class="card-title">Recherche Cyberattaques</h3>
-                        <p class="card-desc">
-                            Réalisation d'une vidéo pédagogique présentant une recherche approfondie sur les cyberattaques et les mécanismes de défense (Projet binôme).
-                        </p>
-                        <a href="projet-youtube" class="card-link">Regarder la vidéo &rarr;</a>
-                    </div>
-                </article>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span class="tag">Active Directory</span>
+                                <span class="tag">Tiering Model</span>
+                                <span class="tag">Sécurité</span>
+                            </div>
+                            <h3 class="card-title">Modernisation TechNova</h3>
+                            <p class="card-desc">
+                                Conception sécurisée et durcissement d'une infrastructure Active Directory (Tiering,
+                                PAW, PoC intensif). Score d'audit Purple Knight : 96%.
+                            </p>
+                            <a href="projet-technova" class="card-link">Voir le détail du projet &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="assets/img/thales.webp" alt="Projet Thales" style="object-position: 50% 100%;">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span class="tag">Développement</span>
+                                <span class="tag">Partenariat</span>
+                            </div>
+                            <h3 class="card-title">Partenariat Thales</h3>
+                            <p class="card-desc">
+                                Conception et développement d'une solution technique sur mesure répondant aux exigences
+                                spécifiques de Thales. Projet réalisé en équipe agile de trois personnes.
+                            </p>
+                            <a href="projet-thales" class="card-link">En savoir plus &rarr;</a>
+                        </div>
+                    </article>
 
-                <article class="project-card">
-                    <div class="card-image">
-                        <img src="assets/img/firefoxbanniere.jpg" alt="Site Web Collaboratif">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-tags">
-                            <span class="tag">Web</span>
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">Collaboratif</span>
-                        </div>
-                        <h3 class="card-title">Site Web Collaboratif</h3>
-                        <p class="card-desc">
-                            Création et déploiement d'un site web mettant en lumière nos passions communes (Automobile, Espace, Mangas). Travail sur le design et l'intégration.
-                        </p>
-                        <a href="projet-siteweb" class="card-link">Voir le détail du projet &rarr;</a>
-                    </div>
-                </article>
+                </div>
 
-                <article class="project-card">
-                    <div class="card-image">
-                        <img src="assets/img/newsletter.png" alt="Article Newsletter">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-tags">
-                            <span class="tag">Communication</span>
-                            <span class="tag">Rédaction</span>
-                        </div>
-                        <h3 class="card-title">Rédaction Newsletter</h3>
-                        <p class="card-desc">
-                            Rédaction d'un article engagé sur les rencontres professionnelles, publié dans la newsletter officielle de l'IUT R&T de Sophia-Antipolis.
-                        </p>
-                        <a href="assets/docs/newsletter-salhi.pdf" target="_blank" class="card-link">Lire l'article (PDF) &rarr;</a>
-                    </div>
-                </article>
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="projets" class="btn-secondary">Découvrir tous mes projets &rarr;</a>
+                </div>
 
             </div>
-        </div>
-    </section>
+        </section>
 
-    
-    <section id="experience" class="experience section-padding">
-        <div class="container">
-            <h2 class="section-title">Expériences Pro</h2>
 
-            <div class="timeline">
-                
-                <div class="timeline-item">
-                    <span class="timeline-dot"></span>
-                    
-                    <span class="timeline-date">Novembre 2024 - Aujourd'hui</span> 
-                    
-                    <div class="timeline-content">
-                        <h3>Alternant Technicien Support & Déploiement</h3>
-                        <h4>iSelection - Nice</h4>
-                        
+        <section id="experience" class="experience section-padding">
+            <div class="container">
+                <h2 class="section-title">Expériences Pro</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+
+                        <span class="timeline-date">Novembre 2024 - Aujourd'hui</span>
+
+                        <div class="timeline-content">
+                            <h3>Alternant Technicien Support & Déploiement</h3>
+                            <h4>iSelection - Nice</h4>
+
+                            <p>
+                                En poste au sein du service informatique, j'assure le maintien en condition
+                                opérationnelle du parc et le support technique pour les collaborateurs.
+                            </p>
+
+                            <ul class="timeline-list">
+                                <li><strong>Support N1 & N2 :</strong> Diagnostic et résolution des incidents
+                                    utilisateurs via la plateforme de ticketing <em>Samanage</em> (SolarWinds).</li>
+                                <li><strong>Administration Système :</strong> Gestion des comptes utilisateurs et des
+                                    droits d'accès sur <strong>Active Directory</strong> et <strong>Azure</strong>.</li>
+                                <li><strong>Gestion de Parc :</strong> Préparation, déploiement et maintenance des
+                                    postes de travail et périphériques.</li>
+                                <li><strong>Projets :</strong> Participation à l'amélioration continue des processus de
+                                    support et de déploiement.</li>
+                            </ul>
+
+                            <div class="card-tags" style="margin-top: 15px;">
+                                <span class="tag">Azure / AD</span>
+                                <span class="tag">SolarWinds Samanage</span>
+                                <span class="tag">Support N2</span>
+                                <span class="tag">Déploiement</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-date">Avril 2024 - Juin 2024 (3 mois)</span>
+
+                        <div class="timeline-content">
+                            <h3>Technicien Support de Proximité</h3>
+                            <h4>CNAF (Caisse Nationale des Allocations Familiales) - Sophia Antipolis</h4>
+
+                            <p>
+                                Stage de 2ème année de BUT R&T. Participation active à la migration du parc informatique
+                                vers Windows 11 et gestion quotidienne du support utilisateur.
+                            </p>
+
+                            <ul class="timeline-list">
+                                <li><strong>Migration Windows 11 :</strong> Déploiement d'images via SCCM
+                                    (Masterisation) et configuration des postes.</li>
+                                <li><strong>Gestion de Parc :</strong> Inventaire et suivi du matériel via OCS
+                                    Inventory.</li>
+                                <li><strong>Support Utilisateur :</strong> Résolution d'incidents (Niveau 1 & 2) via
+                                    l'outil de ticketing GACI.</li>
+                                <li><strong>Infrastructure :</strong> Maintenance des salles de visioconférence et
+                                    gestion des comptes Active Directory (AD).</li>
+                            </ul>
+
+                            <div class="card-tags" style="margin-top: 15px;">
+                                <span class="tag">Windows 11</span>
+                                <span class="tag">SCCM</span>
+                                <span class="tag">Active Directory</span>
+                                <span class="tag">Support</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="skills section-padding">
+            <div class="container">
+                <h2 class="section-title">Mes Compétences</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Réseaux & Infrastructure</h3>
+                        <p style="color: var(--color-text-muted); font-size: 0.9rem;">Architecture VLANs, Routage OSPF,
+                            Cisco CCNA, Pare-feux ASA...</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Cybersécurité</h3>
+                        <p style="color: var(--color-text-muted); font-size: 0.9rem;">Audit AD, Pentest, Hardening
+                            Linux/Windows, Wazuh...</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="4 17 10 11 4 5"></polyline>
+                                <line x1="12" y1="19" x2="20" y2="19"></line>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Systèmes & Cloud</h3>
+                        <p style="color: var(--color-text-muted); font-size: 0.9rem;">Administration AD/Azure, Proxmox,
+                            Docker, Scripting Python...</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="competences" class="btn-secondary">Parcours de compétences détaillé &rarr;</a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about section-padding">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">À propos</h2>
+                    <div class="text-content">
                         <p>
-                            En poste au sein du service informatique, j'assure le maintien en condition opérationnelle du parc et le support technique pour les collaborateurs.
+                            Passionné par les défis techniques et la protection des infrastructures, je suis
+                            <strong>Morgan SALHI</strong>, étudiant en 3ème année de BUT Réseaux et Télécommunications à
+                            l'IUT de Sophia-Antipolis.
                         </p>
-                        
-                        <ul class="timeline-list">
-                            <li><strong>Support N1 & N2 :</strong> Diagnostic et résolution des incidents utilisateurs via la plateforme de ticketing <em>Samanage</em> (SolarWinds).</li>
-                            <li><strong>Administration Système :</strong> Gestion des comptes utilisateurs et des droits d'accès sur <strong>Active Directory</strong> et <strong>Azure</strong>.</li>
-                            <li><strong>Gestion de Parc :</strong> Préparation, déploiement et maintenance des postes de travail et périphériques.</li>
-                            <li><strong>Projets :</strong> Participation à l'amélioration continue des processus de support et de déploiement.</li>
-                        </ul>
-
-                        <div class="card-tags" style="margin-top: 15px;">
-                            <span class="tag">Azure / AD</span>
-                            <span class="tag">SolarWinds Samanage</span>
-                            <span class="tag">Support N2</span>
-                            <span class="tag">Déploiement</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <span class="timeline-dot"></span>
-                    <span class="timeline-date">Avril 2024 - Juin 2024 (3 mois)</span> 
-                    
-                    <div class="timeline-content">
-                        <h3>Technicien Support de Proximité</h3>
-                        <h4>CNAF (Caisse Nationale des Allocations Familiales) - Sophia Antipolis</h4>
-                        
                         <p>
-                            Stage de 2ème année de BUT R&T. Participation active à la migration du parc informatique vers Windows 11 et gestion quotidienne du support utilisateur.
+                            Mon parcours est guidé par une volonté constante de maîtriser l'équilibre entre performance
+                            réseau et sécurité informatique. Au fil de ma formation et de mes recherches personnelles,
+                            la cybersécurité est devenue bien plus qu'un centre d'intérêt : c'est une spécialisation
+                            dans laquelle je m'investis quotidiennement.
                         </p>
-                        
-                        <ul class="timeline-list">
-                            <li><strong>Migration Windows 11 :</strong> Déploiement d'images via SCCM (Masterisation) et configuration des postes.</li>
-                            <li><strong>Gestion de Parc :</strong> Inventaire et suivi du matériel via OCS Inventory.</li>
-                            <li><strong>Support Utilisateur :</strong> Résolution d'incidents (Niveau 1 & 2) via l'outil de ticketing GACI.</li>
-                            <li><strong>Infrastructure :</strong> Maintenance des salles de visioconférence et gestion des comptes Active Directory (AD).</li>
-                        </ul>
+                        <p>
+                            En dehors du cadre éducatif, je suis passionné par la lecture et les sports mécaniques
+                            (Formule 1, Nascar, Rallye). Cette passion pour la précision et la vitesse se reflète dans
+                            mon approche du travail.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Me contacter</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p>Un projet en tête ? Une question technique ? N'hésitez pas à m'envoyer un message via ce
+                            formulaire ou via LinkedIn.</p>
+                    </div>
 
-                        <div class="card-tags" style="margin-top: 15px;">
-                            <span class="tag">Windows 11</span>
-                            <span class="tag">SCCM</span>
-                            <span class="tag">Active Directory</span>
-                            <span class="tag">Support</span>
+                    <form action="https://formspree.io/f/xzdaybke" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Votre nom</label>
+                            <input type="text" id="name" name="name" placeholder="Ex: Jean Dupont" required>
                         </div>
-                    </div>
-                </div>
 
-                </div>
-        </div>
-    </section>
+                        <div class="form-group">
+                            <label for="email">Votre email</label>
+                            <input type="email" id="email" name="email" placeholder="jean@exemple.com" required>
+                        </div>
 
-    <section id="competences" class="skills section-padding">
-        <div class="container">
-            <h2 class="section-title">Mes Compétences</h2>
-            
-            <div class="skills-grid">
-                
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="skill-title">Réseaux & Infrastructure</h3>
-                    <ul class="skill-list">
-                        <li><strong>Architecture :</strong> VLANs, VLSM, Routage OSPF</li>
-                        <li><strong>Cisco CCNA 1 :</strong> Introduction to Networks (ITN)</li>
-                        <li><strong>Cisco CCNA 3 :</strong> Enterprise Networking, Security, and Automation (ENSA)</li>
-                        <li><strong>Sécurité Réseau :</strong> Pare-feux ASA, VPN IPsec/SSL</li>
-                    </ul>
-                </div>
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Bonjour Morgan, je vous contacte pour..." required></textarea>
+                        </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="skill-title">Sécurité Offensive (Pentest)</h3>
-                    <ul class="skill-list">
-                        <li><strong>Reconnaissance :</strong> Nmap, Amass, Wireshark</li>
-                        <li><strong>Web :</strong> Burp Suite, OWASP ZAP</li>
-                        <li><strong>Exploitation :</strong> SQLmap, Metasploit, John the Ripper</li>
-                        <li><strong>Pratique :</strong> Méthodologie active sur TryHackMe</li>
-                    </ul>
-                </div>
+                        <input type="text" name="_gotcha" style="display:none">
 
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="4 17 10 11 4 5"></polyline>
-                            <line x1="12" y1="19" x2="20" y2="19"></line>
-                        </svg>
-                    </div>
-                    <h3 class="skill-title">Systèmes & Virtualisation</h3>
-                    <ul class="skill-list">
-                        <li><strong>Linux :</strong> Administration avancée (Debian/Ubuntu), Hardening</li>
-                        <li><strong>Virtualisation :</strong> Proxmox VE, GNS3, Docker</li>
-                        <li><strong>Scripting :</strong> Python (Automatisation), Bash</li>
-                        <li><strong>Windows :</strong> Active Directory, GPO</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section id="about" class="about section-padding">
-        <div class="container about-grid">
-            <div class="about-text">
-                <h2 class="section-title">À propos</h2>
-                <div class="text-content">
-                    <p>
-                        Passionné par les défis techniques et la protection des infrastructures, je suis <strong>Morgan SALHI</strong>, étudiant en 3ème année de BUT Réseaux et Télécommunications à l'IUT de Sophia-Antipolis.
-                    </p>
-                    <p>
-                        Mon parcours est guidé par une volonté constante de maîtriser l'équilibre entre performance réseau et sécurité informatique. Au fil de ma formation et de mes recherches personnelles, la cybersécurité est devenue bien plus qu'un centre d'intérêt : c'est une spécialisation dans laquelle je m'investis quotidiennement.
-                    </p>
-                    <p>
-                        En dehors du cadre éducatif, je suis passionné par la lecture et les sports mécaniques (Formule 1, Nascar, Rallye). Cette passion pour la précision et la vitesse se reflète dans mon approche du travail.
-                    </p>
+                        <button type="submit" class="btn-primary" style="width: 100%; border: none;">
+                            Envoyer le message
+                        </button>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Me contacter</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <p>Un projet en tête ? Une question technique ? N'hésitez pas à m'envoyer un message via ce formulaire ou via LinkedIn.</p>
-                </div>
-                
-                <form action="https://formspree.io/f/xzdaybke" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Votre nom</label>
-                        <input type="text" id="name" name="name" placeholder="Ex: Jean Dupont" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Votre email</label>
-                        <input type="email" id="email" name="_replyto" placeholder="jean@exemple.com" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Votre message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Bonjour Morgan, je vous contacte pour..." required></textarea>
-                    </div>
+        </section>
 
-                    <input type="text" name="_gotcha" style="display:none">
-
-                    <button type="submit" class="btn-primary" style="width: 100%; border: none;">
-                        Envoyer le message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    </main> <footer class="footer">
+    </main>
+    <footer class="footer">
         <div class="container footer-content">
             <h2 class="footer-title">Morgan Salhi</h2>
-            <p class="footer-text">Futur Ingénieur Réseaux & Sécurité. Passionné par la protection des infrastructures.</p>
-            
+            <p class="footer-text">Futur Ingénieur Réseaux & Sécurité. Passionné par la protection des infrastructures.
+            </p>
+
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/morgan-salhi/" target="_blank">LinkedIn</a>
                 <a href="https://www.credly.com/users/salhi-morgan/badges#credly" target="_blank">Certifications</a>
-                <a href="https://github.com/morgansalhi" target="_blank">GitHub</a>
             </div>
 
             <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
         </div>
     </footer>
     <script src="assets/js/main.js"></script>
-    <script>
-        const burger = document.querySelector('.burger');
-        const navLinks = document.querySelector('.nav-links');
-        const links = document.querySelectorAll('.nav-links a');
-
-        // Ouvre/Ferme le menu au clic sur le burger
-        burger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            burger.classList.toggle('active');
-            
-            // LA TOUCHE PRO : Bloque le défilement du site quand le menu est ouvert
-            if (navLinks.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Ferme le menu automatiquement quand on clique sur un lien
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                burger.classList.remove('active');
-                document.body.style.overflow = ''; // Réactive le défilement
-            });
-        });
-    </script>
 </body>
-</html>
-</body>
+
 </html>
