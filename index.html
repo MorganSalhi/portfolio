@@ -350,19 +350,39 @@
     </section>
     </main>
     <footer id="contact" class="footer">
-        <div class="container footer-content">
-            <h2 class="footer-title">Une question, un échange ?</h2>
-            <p class="footer-text">N'hésitez pas à me contacter pour discuter de projets techniques ou pour élargir notre réseau professionnel.</p>
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Me contacter</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p>Un projet en tête ? Une question technique ? N'hésitez pas à m'envoyer un message via ce formulaire ou via LinkedIn.</p>
+                    </div>
             
-            <a href="mailto:morgansalhi1@gmail.com" class="btn-primary">Me contacter par email</a>
+                    <form action="https://formspree.io/f/xzdaybke" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Votre nom</label>
+                            <input type="text" id="name" name="name" placeholder="Ex: Jean Dupont" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="email">Votre email</label>
+                            <input type="email" id="email" name="_replyto" placeholder="jean@exemple.com" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Bonjour Morgan, je vous contacte pour..." required></textarea>
+                        </div>
 
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/morgan-salhi/" target="_blank">LinkedIn</a>
-                <a href="https://www.credly.com/users/salhi-morgan/badges#credly" target="_blank">Certifications</a>
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <button type="submit" class="btn-primary" style="width: 100%; border: none;">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
             </div>
-
-            <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
-        </div>
+        </section>
     </footer>
     <script src="assets/js/main.js"></script>
     <script>
