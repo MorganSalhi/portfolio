@@ -548,3 +548,30 @@ img:not(.profile-pic) {
         padding: 20px;
     }
 }
+
+/* =========================================
+   CORRECTION ESPACEMENT CONTACT / FOOTER
+   ========================================= */
+
+/* Réduit le vide sous le formulaire */
+#contact.section-padding {
+    padding-bottom: 40px; 
+}
+
+/* Réduit le vide au-dessus du footer */
+.footer {
+    padding-top: 30px; 
+}
+
+/* Rapproche les réseaux sociaux du titre du footer */
+.footer-title {
+    margin-bottom: 0.5rem;
+}
+
+.footer-text {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    margin-top: 1.5rem; /* On divise par deux l'espace au-dessus de LinkedIn/Credly */
+}
