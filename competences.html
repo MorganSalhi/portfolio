@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +9,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <nav class="navbar container">
-            <a href="index" class="logo" style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
+            <a href="index" class="logo"
+                style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
                 <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
             </a>
             <ul class="nav-links">
                 <li><a href="index">Accueil</a></li>
                 <li><a href="index#competences">Retour</a></li>
-                <li><a href="#contact" class="btn-primary">Me contacter</a></li>
+                <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
             </ul>
         </nav>
     </header>
 
-    <main style="padding-top: 120px;">
+    <main style="padding-top: 120px; padding-bottom: 60px;">
         <section class="container">
             <h1 class="section-title">Parcours de Compétences</h1>
-            <p style="margin-bottom: 40px; color: var(--color-text-muted);">Voici une vue détaillée des compétences techniques acquises lors de mes projets et expériences.</p>
+            <p style="margin-bottom: 40px; color: var(--color-text-muted);">Voici une vue détaillée des compétences
+                techniques acquises lors de mes projets et expériences.</p>
 
             <div class="detail-block">
-                <h2 style="color: var(--color-primary); margin-bottom: 20px;">🛡️ Cybersécurité & Hardening</h2>
+                <h2
+                    style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                    Cybersécurité & Hardening
+                </h2>
                 <ul class="detail-list">
                     <li>
-                        <strong>Audit Active Directory :</strong> Utilisation avancée de PingCastle et Purple Knight pour identifier les chemins d'attaque et failles de configuration.
-                        <br><small>👉 <em>Appliqué sur : <a href="projet-technova" style="color: var(--color-primary);">Projet TechNova</a></em></small>
+                        <strong>Audit Active Directory :</strong> Utilisation avancée de PingCastle et Purple Knight
+                        pour identifier les chemins d'attaque et failles de configuration.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="projet-technova" style="color: var(--color-primary);">Projet
+                                    TechNova</a></em>
+                        </small>
                     </li>
                     <li>
-                        <strong>Tiering Model (Modèle en couches) :</strong> Mise en place d'une isolation stricte des comptes d'administration (Tier 0, 1, 2) pour contrer le vol de tokens.
-                        <br><small>👉 <em>Appliqué sur : <a href="projet-technova" style="color: var(--color-primary);">Projet TechNova</a></em></small>
+                        <strong>Tiering Model (Modèle en couches) :</strong> Mise en place d'une isolation stricte des
+                        comptes d'administration (Tier 0, 1, 2) pour contrer le vol de tokens.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="projet-technova" style="color: var(--color-primary);">Projet
+                                    TechNova</a></em>
+                        </small>
                     </li>
                     <li>
-                        <strong>Vulgarisation & Analyse :</strong> Étude approfondie des vecteurs de propagation (EternalBlue) et mécanismes de ransomware.
-                        <br><small>👉 <em>Appliqué sur : <a href="projet-youtube" style="color: var(--color-primary);">Analyse WannaCry</a></em></small>
+                        <strong>Vulgarisation & Analyse :</strong> Étude approfondie des vecteurs de propagation
+                        (EternalBlue) et mécanismes de ransomware.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="projet-youtube" style="color: var(--color-primary);">Analyse
+                                    WannaCry</a></em>
+                        </small>
                     </li>
                 </ul>
             </div>
@@ -48,15 +89,45 @@
             <hr class="divider">
 
             <div class="detail-block">
-                <h2 style="color: var(--color-primary); margin-bottom: 20px;">🌐 Réseaux & Infrastructures</h2>
+                <h2
+                    style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    Réseaux & Infrastructures
+                </h2>
                 <ul class="detail-list">
                     <li>
-                        <strong>Interconnexion Multi-sites :</strong> Configuration de tunnels VPN IPsec, routage OSPF et segmentation VLANs complexes.
-                        <br><small>👉 <em>Appliqué sur : <a href="projet-reseau" style="color: var(--color-primary);">Architecture Cisco</a></em></small>
+                        <strong>Interconnexion Multi-sites :</strong> Configuration de tunnels VPN IPsec, routage OSPF
+                        et segmentation VLANs complexes.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="projet-reseau" style="color: var(--color-primary);">Architecture
+                                    Cisco</a></em>
+                        </small>
                     </li>
                     <li>
-                        <strong>Sécurisation Périmétrique :</strong> Implémentation de pare-feux Cisco ASA, NAT et règles de filtrage (ACLs).
-                        <br><small>👉 <em>Appliqué sur : <a href="projet-reseau" style="color: var(--color-primary);">Architecture Cisco</a></em></small>
+                        <strong>Sécurisation Périmétrique :</strong> Implémentation de pare-feux Cisco ASA, NAT et
+                        règles de filtrage (ACLs).
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="projet-reseau" style="color: var(--color-primary);">Architecture
+                                    Cisco</a></em>
+                        </small>
                     </li>
                 </ul>
             </div>
@@ -64,15 +135,44 @@
             <hr class="divider">
 
             <div class="detail-block">
-                <h2 style="color: var(--color-primary); margin-bottom: 20px;">⚙️ Systèmes, Cloud & Dév</h2>
+                <h2
+                    style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                    </svg>
+                    Systèmes, Cloud & Dév
+                </h2>
                 <ul class="detail-list">
                     <li>
-                        <strong>Administration Hybride :</strong> Gestion des identités sur Active Directory on-premise et Azure AD.
-                        <br><small>👉 <em>Appliqué en : <a href="index#experience" style="color: var(--color-primary);">Alternance iSelection</a></em></small>
+                        <strong>Administration Hybride :</strong> Gestion des identités sur Active Directory on-premise
+                        et Azure AD.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué en : <a href="index#experience" style="color: var(--color-primary);">Alternance
+                                    iSelection</a></em>
+                        </small>
                     </li>
                     <li>
-                        <strong>Développement Fullstack & Scripting :</strong> Création d'outils d'exportation de données et interfaces de gestion sécurisées.
-                        <br><small>👉 <em>Appliqué sur : <a href="projet-thales" style="color: var(--color-primary);">Projet Thales</a> et <a href="projet-android" style="color: var(--color-primary);">App Android</a></em></small>
+                        <strong>Développement Fullstack & Scripting :</strong> Création d'outils d'exportation de
+                        données et interfaces de gestion sécurisées.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="projet-thales" style="color: var(--color-primary);">Projet
+                                    Thales</a> et <a href="projet-android" style="color: var(--color-primary);">App
+                                    Android</a></em>
+                        </small>
                     </li>
                 </ul>
             </div>
@@ -80,10 +180,16 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-content">
+            <h2 class="footer-title">Morgan Salhi</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/morgan-salhi/" target="_blank">LinkedIn</a>
+                <a href="https://www.credly.com/users/salhi-morgan/badges#credly" target="_blank">Certifications</a>
+            </div>
             <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
         </div>
     </footer>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
