@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratoire SOC & Blue Team | Morgan Salhi</title>
+    <meta name="description"
+        content="Découvrez mes projets en Blue Team : déploiement SIEM Wazuh, règles Suricata IDS, et analyse dynamique de malwares.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index" class="logo"
+                style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
+                <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index">Accueil</a></li>
+                <li><a href="projets">Retour aux projets</a></li>
+                <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <span class="tag">Défense & Blue Team</span>
+                <h1 class="hero-title">Laboratoire SOC</h1>
+                <p class="project-subtitle">Supervision, Détection d'Intrusions et Analyse de Malwares</p>
+            </div>
+        </section>
+
+        <section class="portfolio section-padding">
+            <div class="container">
+                <p style="margin-bottom: 40px; color: var(--color-text-muted); text-align: center;">
+                    Sélection de comptes-rendus techniques axés sur la détection des menaces, l'analyse comportementale
+                    et le durcissement des systèmes.
+                </p>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="card-content" style="height: 100%;">
+                            <div class="card-tags">
+                                <span class="tag">Wazuh</span>
+                                <span class="tag">SIEM</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                            <h3 class="card-title">Déploiement SIEM (Wazuh)</h3>
+                            <p class="card-desc">Intégration de Wazuh dans une infrastructure Dockerisée. Déploiement
+                                des agents, remontée et corrélation d'alertes natives (Brute Force Web, exploit
+                                SambaCry).</p>
+
+                            <a href="assets/docs/compte-rendu-wazuh.pdf" target="_blank" class="btn-primary"
+                                style="margin-top: auto; padding: 0.5rem 1rem; width: fit-content; display: inline-flex; align-items: center; gap: 8px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                Lire le rapport
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="card-content" style="height: 100%;">
+                            <div class="card-tags">
+                                <span class="tag">Suricata</span>
+                                <span class="tag">IDS</span>
+                                <span class="tag">Règles</span>
+                            </div>
+                            <h3 class="card-title">Détection d'Intrusion (IDS)</h3>
+                            <p class="card-desc">Configuration de Suricata pour l'analyse du trafic réseau. Détection de
+                                reverse shells et optimisation de règles (bypass de casse, limites des expressions
+                                régulières).</p>
+
+                            <a href="assets/docs/tp-suricata.pdf" target="_blank" class="btn-primary"
+                                style="margin-top: auto; padding: 0.5rem 1rem; width: fit-content; display: inline-flex; align-items: center; gap: 8px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                Lire le rapport
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="card-content" style="height: 100%;">
+                            <div class="card-tags">
+                                <span class="tag">Malware</span>
+                                <span class="tag">Any.Run</span>
+                                <span class="tag">Sandbox</span>
+                            </div>
+                            <h3 class="card-title">Analyse Dynamique de Malware</h3>
+                            <p class="card-desc">Étude comportementale d'un exécutable malveillant en environnement
+                                Sandbox (Any.Run). Suivi des anomalies système (CPU/RAM via htop) et recommandations de
+                                remédiation.</p>
+
+                            <a href="assets/docs/rapport-analyse-virus.pdf" target="_blank" class="btn-primary"
+                                style="margin-top: auto; padding: 0.5rem 1rem; width: fit-content; display: inline-flex; align-items: center; gap: 8px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                Lire le rapport
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="card-content" style="height: 100%;">
+                            <div class="card-tags">
+                                <span class="tag">Audit</span>
+                                <span class="tag">Web</span>
+                                <span class="tag">Recommandations</span>
+                            </div>
+                            <h3 class="card-title">Audit de Sécurité Web</h3>
+                            <p class="card-desc">Analyse des failles critiques (XSS, SQLi, File Upload). Identification
+                                de versions logicielles vulnérables (Flask) et application des bonnes pratiques de
+                                sécurisation.</p>
+
+                            <a href="assets/docs/tp-audit-securite.pdf" target="_blank" class="btn-primary"
+                                style="margin-top: auto; padding: 0.5rem 1rem; width: fit-content; display: inline-flex; align-items: center; gap: 8px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                Lire le rapport
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
