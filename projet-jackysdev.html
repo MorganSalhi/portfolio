@@ -5,173 +5,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Infrastructure DevSecOps Jacky's Dev | Morgan Salhi</title>
-    <meta name="description" content="Déploiement automatisé d'une infrastructure hautement disponible, souveraine et sécurisée via Packer, OpenTofu et Ansible.">
+    <title>Pipeline DevSecOps & IaC - Jacky's Dev | Morgan Salhi</title>
+    <meta name="description"
+        content="Étude de cas DevOps : Création d'une infrastructure as Code (IaC) complète avec Packer, OpenTofu et Ansible. Haute disponibilité et souveraineté des données.">
+
+    <link rel="canonical" href="https://morgansalhi.fr/projet-devops">
+
+    <meta property="og:title" content="Pipeline DevSecOps & IaC | Morgan Salhi">
+    <meta property="og:description"
+        content="Création d'une infrastructure as Code complète avec Packer, OpenTofu et Ansible. Haute disponibilité et souveraineté des données.">
+    <meta property="og:image" content="https://morgansalhi.fr/assets/img/devops-iac.png">
+    <meta property="og:url" content="https://morgansalhi.fr/projet-devops">
+    <meta property="og:type" content="website">
 
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    <style>
-        /* Styles spécifiques pour la page projet si besoin (en complément de style.css) */
-        .project-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .project-banner {
-            width: 100%;
-            max-height: 500px;
-            object-fit: cover;
-            border-radius: 12px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .project-content h2 {
-            font-family: 'Playfair Display', serif;
-            color: var(--color-primary);
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-        .tech-stack {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-        .tech-item {
-            background: rgba(var(--color-primary-rgb), 0.1);
-            color: var(--color-primary);
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-        .project-grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-top: 30px;
-        }
-        @media (max-width: 768px) {
-            .project-grid-2 {
-                grid-template-columns: 1fr;
-            }
-        }
-        ul.custom-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ul.custom-list li {
-            margin-bottom: 10px;
-            padding-left: 25px;
-            position: relative;
-        }
-        ul.custom-list li::before {
-            content: "➔";
-            position: absolute;
-            left: 0;
-            color: var(--color-primary);
-        }
-    </style>
 </head>
 
 <body>
 
     <header class="header">
         <nav class="navbar container">
-            <a href="index" class="logo" style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
+            <a href="index" class="logo"
+                style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
                 <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
             </a>
-
             <ul class="nav-links">
                 <li><a href="index">Accueil</a></li>
-                <li><a href="projets">Tous les projets</a></li>
+                <li><a href="projets">Retour aux projets</a></li>
                 <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
             </ul>
             <div class="burger">
-                <span></span><span></span><span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
 
-    <main style="padding-top: 120px; padding-bottom: 60px;">
-        <article class="container">
-            
-            <div class="project-header">
-                <h1 class="section-title">Jacky's Dev : Déploiement d'Infrastructure DevSecOps</h1>
-                <div class="tech-stack" style="justify-content: center;">
-                    <span class="tech-item">Infrastructure as Code (IaC)</span>
-                    <span class="tech-item">OpenTofu</span>
-                    <span class="tech-item">Ansible</span>
-                    <span class="tech-item">Packer</span>
-                    <span class="tech-item">Proxmox</span>
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <span class="tag">DevSecOps & Infrastructure as Code</span>
+                <h1 class="hero-title">Automatisation "Jacky's Dev"</h1>
+                <p class="project-subtitle">De l'artisanat manuel au déploiement continu à grande échelle (Packer,
+                    OpenTofu, Ansible)</p>
+
+                <div style="margin-top: 35px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+                    <a href="https://github.com/Jacky-sDev/infra_JackysDev/tree/main" target="_blank" class="btn-primary"
+                        style="display: flex; align-items: center; gap: 10px; margin: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                        Voir le code source (GitHub)
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <img src="assets/img/jackysdev.png" alt="Architecture réseau et pipeline DevSecOps" class="project-banner" loading="lazy">
+        <section class="project-details section-padding">
+            <div class="container">
 
-            <div class="project-content">
-                <h2>Le Contexte Global</h2>
-                <p>
-                    Au sein d'une entreprise fictive nommée <strong>Jacky's Dev</strong>, les équipes faisaient face à des retards critiques dans la livraison des nouvelles fonctionnalités. Le déploiement des applications était géré manuellement par les Ops via des pratiques "maison", source d'erreurs et de lenteurs. 
-                </p>
-                <p>
-                    Notre mission en tant que nouvelle équipe DevOps/DevSecOps était de remplacer ces processus archaïques par une chaîne de déploiement continu moderne, automatisée, et sécurisée, tout en prouvant la valeur ajoutée de la culture DevOps face aux méthodes traditionnelles.
-                </p>
-
-                <h2>La Solution : Provisioning et Automatisation</h2>
-                <p>
-                    Pour répondre à ces enjeux, nous avons conçu une solution complète d'<strong>Infrastructure as Code (IaC)</strong> garantissant un déploiement rapide, reproductible et immuable. Le triptyque technologique retenu repose sur :
-                </p>
-                
-                <div class="project-grid-2">
-                    <div>
-                        <h3>1. Packer (Templates OS)</h3>
-                        <p>Création d'images machines (templates) préconfigurées et réutilisables pour Proxmox. Utilisation de <em>Cloud-init</em> pour les instances Ubuntu 24.04 et de <em>Kickstart</em> pour AlmaLinux 10.</p>
-                    </div>
-                    <div>
-                        <h3>2. OpenTofu (Provisioning)</h3>
-                        <p>Alternative open-source à Terraform, Tofu gère le déploiement des ressources virtuelles sur l'hyperviseur Proxmox, orchestrant la création des machines, du réseau et des disques de manière déclarative.</p>
-                    </div>
+                <div class="detail-block">
+                    <h2 class="section-title">Le Cas d'Étude : Sauver l'entreprise</h2>
+                    <p>
+                        L'entreprise "Jacky's Dev" faisait face à un problème critique partagé par beaucoup de
+                        structures : une équipe de développement performante, mais <strong>une mise en production lente,
+                            manuelle et propice aux erreurs humaines</strong>.
+                    </p>
+                    <p>
+                        Notre mission en tant qu'équipe DevOps a été de remplacer ces pratiques "maison" par une
+                        véritable chaîne de déploiement continu et robuste, en adoptant l'approche
+                        <strong>Infrastructure as Code (IaC)</strong>.
+                    </p>
                 </div>
-                
-                <div style="margin-top: 30px;">
-                    <h3>3. Ansible (Configuration)</h3>
-                    <p>Maintien de l'état des services et configuration logicielle sans agent. L'orchestration s'effectue via des playbooks structurés pour déployer :</p>
-                    <ul class="custom-list">
-                        <li><strong>Le Core :</strong> Loadbalancers en Haute Disponibilité (HAProxy) et Bases de Données (PostgreSQL/MariaDB) avec réplication Master/Slave.</li>
-                        <li><strong>Le Réseau :</strong> Isolation stricte via une passerelle VPN unique sous AlmaLinux.</li>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">La Pipeline d'Automatisation (IaC)</h2>
+                    <p>
+                        Pour répondre à ces enjeux de fiabilité et de rapidité, nous avons conçu une pipeline découpée
+                        en trois strates fondamentales :
+                    </p>
+                    <ul class="detail-list">
+                        <li>
+                            <strong>1. Création de Golden Images (Packer) :</strong> Fini les installations manuelles
+                            d'OS. Nous avons automatisé la création d'images systèmes prêtes à l'emploi (Ubuntu 24.04 et
+                            AlmaLinux 10) pré-configurées avec <em>Cloud-init</em> et <em>Kickstart</em>.
+                        </li>
+                        <li>
+                            <strong>2. Provisionning Cloud (OpenTofu) :</strong> En alternative open-source à Terraform,
+                            nous avons utilisé OpenTofu pour instancier l'infrastructure réseau et les machines
+                            virtuelles de manière déclarative et reproductible.
+                        </li>
+                        <li>
+                            <strong>3. Configuration & Déploiement (Ansible) :</strong> C'est le cœur du système. Des
+                            playbooks Ansible complexes ont été rédigés pour installer Docker, paramétrer les bases de
+                            données et déployer nos applications de manière idempotente.
+                        </li>
                     </ul>
                 </div>
 
-                <h2>Souveraineté, Confidentialité & Sécurité</h2>
-                <p>
-                    L'un des prérequis majeurs de l'infrastructure était de garantir l'anonymat des utilisateurs, la confidentialité des échanges et la souveraineté totale des données. Plutôt que de reposer sur des services cloud tiers, nous avons déployé un écosystème de services auto-hébergés :
-                </p>
-                <ul class="custom-list">
-                    <li><strong>Gitea :</strong> Forge Git privée pour la souveraineté du code source.</li>
-                    <li><strong>Vaultwarden :</strong> Gestionnaire de mots de passe (fork de Bitwarden) pour sécuriser les secrets des équipes.</li>
-                    <li><strong>Authentik :</strong> Fournisseur d'identité (SSO/IAM) pour centraliser et sécuriser les accès.</li>
-                    <li><strong>SimpleLogin & Tor :</strong> Déploiement de relais et d'alias pour garantir l'anonymat réseau et la protection des données emails.</li>
-                </ul>
+                <hr class="divider">
 
-                <h2>Bilan du Projet</h2>
-                <p>
-                    Ce projet de déploiement continu a permis de transformer radicalement la façon de travailler de "Jacky's Dev". Le passage d'une configuration manuelle à une approche 100% code a drastiquement réduit le "Time to Market", éliminé les erreurs humaines liées aux configurations manuelles, et apporté une résilience forte (réplication de BDD, Load Balancing) tout en isolant l'infrastructure du réseau public.
-                </p>
-                
-                <div style="text-align: center; margin-top: 50px;">
-                    <a href="https://github.com/MorganSalhi/portfolio" target="_blank" class="btn-primary" style="text-decoration: none;">Voir le code sur mon GitHub</a>
+                <div class="detail-block">
+                    <h2 class="section-title">Résilience & Validation Continue (TDD)</h2>
+                    <p>
+                        Déployer vite, c'est bien. Déployer sans casser la production, c'est mieux. L'infrastructure a
+                        été pensée pour la <strong>Haute Disponibilité (HA)</strong> :
+                    </p>
+                    <ul class="detail-list">
+                        <li><strong>Équilibrage de charge :</strong> Mise en place d'un Loadbalancer pour répartir le
+                            trafic.</li>
+                        <li><strong>Réplication SQL :</strong> Implémentation de playbooks spécifiques
+                            (<code>ha-db-replication.yml</code>) pour garantir l'intégrité de la base de données
+                            maître/esclave.</li>
+                        <li><strong>Test-Driven Infrastructure :</strong> Développement d'un script d'audit en Python
+                            (<code>test_infra.py</code>) utilisant Pytest. Avant chaque mise en production,
+                            l'infrastructure est automatiquement testée pour valider son bon fonctionnement.</li>
+                    </ul>
                 </div>
-            </div>
 
-        </article>
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Souveraineté des données & Sécurité</h2>
+                    <p>
+                        L'anonymat et le contrôle absolu des données étaient au centre du cahier des charges. Nous avons
+                        donc déployé une stack d'outils 100% open-source orientés "Privacy" :
+                    </p>
+                    <ul class="detail-list">
+                        <li><strong>Authentik :</strong> Un fournisseur d'identité sécurisé pour gérer le SSO (Single
+                            Sign-On).</li>
+                        <li><strong>Vaultwarden :</strong> Un gestionnaire de mots de passe d'entreprise auto-hébergé.
+                        </li>
+                        <li><strong>Gitea :</strong> Pour l'hébergement de notre code source en interne.</li>
+                        <li><strong>SimpleLogin & Tor :</strong> Pour garantir l'anonymat des flux de communication et
+                            la gestion d'alias emails.</li>
+                    </ul>
+                </div>
+
+                <div class="competencies-box" style="margin-top: 50px;">
+                    <h3>Technologies & Concepts Maîtrisés</h3>
+                    <div class="tags-container">
+                        <span class="skill-tag">Ansible (Playbooks / HA)</span>
+                        <span class="skill-tag">OpenTofu (Terraform)</span>
+                        <span class="skill-tag">HashiCorp Packer</span>
+                        <span class="skill-tag">Golden Images</span>
+                        <span class="skill-tag">Haute Disponibilité (Loadbalancer)</span>
+                        <span class="skill-tag">Python (Pytest / TDD)</span>
+                        <span class="skill-tag">SSO (Authentik)</span>
+                        <span class="skill-tag">Auto-Hébergement</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -179,7 +184,7 @@
             <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
         </div>
     </footer>
-
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
