@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projet TechNova - Cybersécurité AD | Morgan Salhi</title>
+    <meta name="description"
+        content="Refonte sécurisée d'une infrastructure Active Directory. Durcissement, Tiering Model, PingCastle et Purple Knight.">
+
+    <link rel="canonical" href="https://morgansalhi.fr/projet-technova">
+
+    <meta property="og:title" content="Projet TechNova - Cybersécurité AD | Morgan Salhi">
+    <meta property="og:description"
+        content="Refonte sécurisée d'une infrastructure Active Directory. Durcissement, Tiering Model, PingCastle et Purple Knight.">
+    <meta property="og:image" content="https://morgansalhi.fr/assets/img/Logo_Integris.png">
+    <meta property="og:url" content="https://morgansalhi.fr/projet-technova">
+    <meta property="og:type" content="website">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index" class="logo"
+                style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
+                <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index">Accueil</a></li>
+                <li><a href="index#portfolio">Retour aux projets</a></li>
+                <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <span class="tag">Active Directory & Sécurité</span>
+                <h1 class="hero-title">Modernisation TechNova</h1>
+                <p class="project-subtitle">Durcissement AD & Architecture Zero Trust</p>
+
+                <div style="margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+
+                    <a href="assets/docs/technova-sujet.pdf" target="_blank" class="btn-secondary" style="margin: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Sujet Client
+                    </a>
+
+                    <a href="assets/docs/rapport-solution.pdf" target="_blank" class="btn-primary" style="margin: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                        Rapport de Solution
+                    </a>
+
+                    <a href="assets/docs/rapport-technique-poc.pdf" target="_blank" class="btn-secondary"
+                        style="margin: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                            </path>
+                        </svg>
+                        Rapport Technique
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details section-padding">
+            <div class="container">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Contexte et Objectifs</h2>
+                    <p>
+                        Dans le cadre d'une réponse à appel d'offres pour <strong>TechNova</strong>, une PME
+                        internationale de 650 collaborateurs, notre équipe (simulant une ESN nommée Intégris) a été
+                        chargée de concevoir la refonte complète et sécurisée de leur infrastructure IT.
+                    </p>
+                    <p>
+                        Pour prouver la viabilité de notre solution, nous avons réalisé un <strong>PoC (Proof of
+                            Concept) intensif de 10 heures</strong> couvrant la refonte réseau, la virtualisation, la
+                        sauvegarde résiliente et la cybersécurité globale de l'entreprise.
+                    </p>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Mon Rôle : L'Identité au centre de la sécurité</h2>
+                    <p>Au sein de ce projet global, j'ai pris la responsabilité de la partie la plus critique :
+                        <strong>l'Active Directory</strong>. L'objectif était de déployer une infrastructure robuste
+                        "Secure by Design" :
+                    </p>
+
+                    <ul class="detail-list">
+                        <li>
+                            <strong>Déploiement Haute Disponibilité :</strong> Mise en place de 3 Contrôleurs de Domaine
+                            (DC) synchronisés et sécurisés.
+                        </li>
+                        <li>
+                            <strong>Ségrégation des privilèges :</strong> Application stricte du <em>Tiering Model</em>
+                            de Microsoft pour cloisonner les accès administratifs.
+                        </li>
+                        <li>
+                            <strong>Poste d'Administration Sécurisé :</strong> Implémentation d'un PAW (Privileged
+                            Access Workstation) dédié à l'administration des niveaux critiques.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="image-wrapper">
+                        <img src="assets/img/architecture-ad.png"
+                            alt="Schéma de l'architecture logicielle Active Directory et du Tiering Model">
+                        <p class="caption">Architecture du POC</p>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Le Défi Technique : La GPO "Fantôme"</h2>
+                    <p>
+                        Le durcissement extrême d'un Active Directory (Harden AD) demande une précision chirurgicale.
+                        Lors de l'application des stratégies de groupe (GPO) pour sécuriser l'environnement, une règle
+                        stricte m'a subitement déconnecté des postes de la paillaisse, bloquant l'accès au lab.
+                    </p>
+                    <p>
+                        <strong>La solution :</strong> J'ai dû analyser les logs en mode hors ligne, isoler la GPO
+                        responsable (liée au durcissement des protocoles d'authentification) et ajuster les exceptions
+                        finement. Cet exercice de <em>troubleshooting</em> sous la pression du chronomètre du PoC a
+                        permis de maintenir l'opérabilité sans sacrifier la sécurité.
+                    </p>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Résultats de l'Audit de Sécurité</h2>
+                    <p>Pour valider la robustesse de notre implémentation à la fin du PoC, nous avons soumis l'Active
+                        Directory à deux des outils d'audit les plus exigeants du marché :</p>
+                </div>
+
+                <div class="project-gallery"
+                    style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
+
+                    <div class="image-wrapper" style="flex: 1; min-width: 300px; height: fit-content;">
+                        <img src="assets/img/pingcastle.png"
+                            alt="Rapport d'audit de sécurité PingCastle affichant un score parfait de 0">
+                        <p class="caption">Score <strong>PingCastle : 0</strong> (Aucune anomalie critique)</p>
+                    </div>
+
+                    <div class="image-wrapper" style="flex: 1; min-width: 300px; height: fit-content;">
+                        <img src="assets/img/purpleknight.png"
+                            alt="Dashboard de l'outil Purple Knight affichant un score de sécurité de 96%"
+                            style="object-fit: contain;">
+                        <p class="caption">Score <strong>Purple Knight : 96%</strong> sur l'identité</p>
+                    </div>
+
+                </div>
+
+                <div
+                    style="background-color: rgba(255, 255, 255, 0.05); border-left: 4px solid var(--color-primary); padding: 15px; margin-top: 15px; margin-bottom: 40px; border-radius: 4px;">
+                    <p style="margin: 0; font-size: 0.9rem; line-height: 1.6; font-style: italic;">
+                        <strong>* Note technique :</strong> Il est important de souligner qu'atteindre le score
+                        théorique de 100% est techniquement impossible dans le contexte d'un déploiement récent (PoC /
+                        Lab). Les 4% de pénalités restantes sur le rapport Purple Knight correspondent exclusivement à
+                        des alertes liées à la "fraîcheur" de l'installation (historique de rotation des mots de passe,
+                        âge des comptes) et non à des défauts de configuration.
+                    </p>
+                </div>
+
+                <div class="competencies-box">
+                    <h3>Compétences Mobilisées</h3>
+                    <div class="tags-container">
+                        <span class="skill-tag">Windows Server</span>
+                        <span class="skill-tag">Active Directory</span>
+                        <span class="skill-tag">Tiering Model</span>
+                        <span class="skill-tag">PAW</span>
+                        <span class="skill-tag">Harden AD / GPO</span>
+                        <span class="skill-tag">PingCastle</span>
+                        <span class="skill-tag">Purple Knight</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
