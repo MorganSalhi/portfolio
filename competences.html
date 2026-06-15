@@ -8,15 +8,26 @@
     <title>Détail des Compétences | Morgan Salhi</title>
     <meta name="description"
         content="Découvrez les compétences techniques de Morgan Salhi en cybersécurité (Pentest, AD), réseaux (Cisco, VPN) et administration système.">
+    <meta name="author" content="Morgan Salhi">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0d17">
 
     <link rel="canonical" href="https://morgansalhi.fr/competences">
 
+    <meta property="og:site_name" content="Morgan Salhi">
+    <meta property="og:locale" content="fr_FR">
     <meta property="og:title" content="Détail des Compétences | Morgan Salhi">
     <meta property="og:description"
         content="Découvrez les compétences techniques de Morgan Salhi en cybersécurité (Pentest, AD), réseaux (Cisco, VPN) et administration système.">
     <meta property="og:image" content="https://morgansalhi.fr/assets/img/morgansalhi.png">
     <meta property="og:url" content="https://morgansalhi.fr/competences">
     <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Détail des Compétences | Morgan Salhi">
+    <meta name="twitter:description"
+        content="Découvrez les compétences techniques de Morgan Salhi en cybersécurité (Pentest, AD), réseaux (Cisco, VPN) et administration système.">
+    <meta name="twitter:image" content="https://morgansalhi.fr/assets/img/morgansalhi.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,15 +49,20 @@
 <body>
     <header class="header">
         <nav class="navbar container">
-            <a href="index" class="logo"
+            <a href="/" class="logo"
                 style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
                 <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="index">Accueil</a></li>
-                <li><a href="index#competences">Retour</a></li>
-                <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/#competences">Retour</a></li>
+                <li><a href="/#contact" class="btn-primary">Me contacter</a></li>
             </ul>
+            <div class="burger" role="button" tabindex="0" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
@@ -77,7 +93,7 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="projets" style="color: var(--color-primary);">Missions Pentest &
+                            <em>Appliqué sur : <a href="/projets" style="color: var(--color-primary);">Missions Pentest &
                                     Red Team</a></em>
                         </small>
                     </li>
@@ -92,7 +108,7 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="projets" style="color: var(--color-primary);">Laboratoire SOC &
+                            <em>Appliqué sur : <a href="/projets" style="color: var(--color-primary);">Laboratoire SOC &
                                     Défense</a></em>
                         </small>
                     </li>
@@ -107,7 +123,7 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="projet-technova" style="color: var(--color-primary);">Projet
+                            <em>Appliqué sur : <a href="/projet-technova" style="color: var(--color-primary);">Projet
                                     TechNova</a></em>
                         </small>
                     </li>
@@ -139,7 +155,7 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="projet-reseau" style="color: var(--color-primary);">Architecture
+                            <em>Appliqué sur : <a href="/projet-reseau" style="color: var(--color-primary);">Architecture
                                     Cisco</a></em>
                         </small>
                     </li>
@@ -153,7 +169,7 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="projet-reseau" style="color: var(--color-primary);">Architecture
+                            <em>Appliqué sur : <a href="/projet-reseau" style="color: var(--color-primary);">Architecture
                                     Cisco</a></em>
                         </small>
                     </li>
@@ -183,7 +199,7 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué en : <a href="index#experience" style="color: var(--color-primary);">Alternance
+                            <em>Appliqué en : <a href="/#experience" style="color: var(--color-primary);">Alternance
                                     iSelection</a></em>
                         </small>
                     </li>
@@ -197,8 +213,8 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="projet-thales" style="color: var(--color-primary);">Projet
-                                    Thales</a> et <a href="projet-android" style="color: var(--color-primary);">App
+                            <em>Appliqué sur : <a href="/projet-thales" style="color: var(--color-primary);">Projet
+                                    Thales</a> et <a href="/projet-android" style="color: var(--color-primary);">App
                                     Android</a></em>
                         </small>
                     </li>
@@ -236,7 +252,7 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="projet-devops" style="color: var(--color-primary);">Architecture
+                            <em>Appliqué sur : <a href="/projet-jackysdev" style="color: var(--color-primary);">Architecture
                                     IaC (Jacky's Dev)</a></em>
                         </small>
                     </li>
@@ -251,7 +267,7 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="projet-devops" style="color: var(--color-primary);">Architecture
+                            <em>Appliqué sur : <a href="/projet-jackysdev" style="color: var(--color-primary);">Architecture
                                     IaC (Jacky's Dev)</a></em>
                         </small>
                     </li>
@@ -266,7 +282,7 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="projet-jackysdev" style="color: var(--color-primary);">Architecture
+                            <em>Appliqué sur : <a href="/projet-jackysdev" style="color: var(--color-primary);">Architecture
                                     IaC (Jacky's Dev)</a></em>
                         </small>
                     </li>
@@ -277,6 +293,10 @@
 
     <footer class="footer">
         <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/morgan-salhi/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.credly.com/users/salhi-morgan/badges#credly" target="_blank" rel="noopener">Certifications</a>
+            </div>
             <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
         </div>
     </footer>

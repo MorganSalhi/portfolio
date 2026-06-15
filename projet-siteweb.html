@@ -9,22 +9,41 @@
 
     <meta name="description"
         content="Création et déploiement d'un site web collaboratif en HTML/CSS, mettant en lumière des passions communes. Projet de Morgan Salhi.">
+    <meta name="author" content="Morgan Salhi">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0d17">
 
     <link rel="canonical" href="https://morgansalhi.fr/projet-siteweb">
 
+    <meta property="og:site_name" content="Morgan Salhi">
+    <meta property="og:locale" content="fr_FR">
     <meta property="og:title" content="Site Web Collaboratif | Morgan Salhi">
     <meta property="og:description"
         content="Création et déploiement d'un site web collaboratif en HTML/CSS. Projet de Morgan Salhi.">
     <meta property="og:image" content="https://morgansalhi.fr/assets/img/firefoxbanniere.jpg">
     <meta property="og:url" content="https://morgansalhi.fr/projet-siteweb">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Site Web Collaboratif | Morgan Salhi">
+    <meta name="twitter:description"
+        content="Création et déploiement d'un site web collaboratif en HTML/CSS. Projet de Morgan Salhi.">
+    <meta name="twitter:image" content="https://morgansalhi.fr/assets/img/firefoxbanniere.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap"
         rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -32,16 +51,16 @@
 
     <header class="header">
         <nav class="navbar container">
-            <a href="index" class="logo"
+            <a href="/" class="logo"
                 style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
                 <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="index">Accueil</a></li>
-                <li><a href="projets">Retour aux projets</a></li>
-                <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/projets">Retour aux projets</a></li>
+                <li><a href="/#contact" class="btn-primary">Me contacter</a></li>
             </ul>
-            <div class="burger">
+            <div class="burger" role="button" tabindex="0" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="primary-nav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -121,7 +140,7 @@
                 <div class="project-gallery">
                     <h2 class="section-title">Aperçu du site</h2>
                     <div class="image-wrapper">
-                        <img src="assets/img/siteweb.png" alt="Aperçu du site web Passions">
+                        <img src="assets/img/siteweb.png" alt="Aperçu du site web Passions" loading="lazy">
                         <p class="caption">Page d'accueil présentant les trois univers (The 100, Junji ito, Berserk)</p>
                     </div>
                 </div>
@@ -143,6 +162,10 @@
 
     <footer class="footer">
         <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/morgan-salhi/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.credly.com/users/salhi-morgan/badges#credly" target="_blank" rel="noopener">Certifications</a>
+            </div>
             <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
         </div>
     </footer>

@@ -8,19 +8,30 @@
     <title>Projet Thales - Solution "Checklist" | Morgan Salhi</title>
     <meta name="description"
         content="Conception et développement d'une plateforme web sur mesure pour Thales Alenia Space visant à centraliser les tests avioniques.">
+    <meta name="author" content="Morgan Salhi">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0d17">
 
     <link rel="canonical" href="https://morgansalhi.fr/projet-thales">
 
+    <meta property="og:site_name" content="Morgan Salhi">
+    <meta property="og:locale" content="fr_FR">
     <meta property="og:title" content="Projet Thales - Solution Checklist | Morgan Salhi">
     <meta property="og:description"
         content="Conception et développement d'une plateforme web sur mesure pour Thales Alenia Space visant à centraliser les tests avioniques.">
     <meta property="og:image" content="https://morgansalhi.fr/assets/img/thales.webp">
     <meta property="og:url" content="https://morgansalhi.fr/projet-thales">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projet Thales - Solution Checklist | Morgan Salhi">
+    <meta name="twitter:description"
+        content="Conception et développement d'une plateforme web sur mesure pour Thales Alenia Space visant à centraliser les tests avioniques.">
+    <meta name="twitter:image" content="https://morgansalhi.fr/assets/img/thales.webp">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap"
         rel="stylesheet">
@@ -39,16 +50,16 @@
 
     <header class="header">
         <nav class="navbar container">
-            <a href="index" class="logo"
+            <a href="/" class="logo"
                 style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
                 <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="index">Accueil</a></li>
-                <li><a href="projets">Retour aux projets</a></li>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/projets">Retour aux projets</a></li>
                 <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
             </ul>
-            <div class="burger">
+            <div class="burger" role="button" tabindex="0" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="primary-nav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -78,7 +89,7 @@
                         Lire le rapport (PDF)
                     </a>
 
-                    <a href="construction" class="btn-secondary" style="display: flex; align-items: center; gap: 10px;">
+                    <a href="/construction" class="btn-secondary" style="display: flex; align-items: center; gap: 10px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
@@ -167,7 +178,8 @@
                     <h2 class="section-title">Interface Utilisateur</h2>
                     <div class="image-wrapper">
                         <img src="assets/img/maquette-thales.png"
-                            alt="Maquette de l'interface utilisateur de la plateforme web Thales">
+                            alt="Maquette de l'interface utilisateur de la plateforme web Thales"
+                            loading="lazy">
                         <p class="caption">Figure 11 : Maquette de la page d'accueil de la solution (Extrait du rapport)
                         </p>
                     </div>
@@ -190,6 +202,10 @@
 
     <footer class="footer">
         <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/morgan-salhi/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.credly.com/users/salhi-morgan/badges#credly" target="_blank" rel="noopener">Certifications</a>
+            </div>
             <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
         </div>
     </footer>

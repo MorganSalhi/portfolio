@@ -8,19 +8,30 @@
     <title>Projet TechNova - Cybersécurité AD | Morgan Salhi</title>
     <meta name="description"
         content="Refonte sécurisée d'une infrastructure Active Directory. Durcissement, Tiering Model, PingCastle et Purple Knight.">
+    <meta name="author" content="Morgan Salhi">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0d17">
 
     <link rel="canonical" href="https://morgansalhi.fr/projet-technova">
 
+    <meta property="og:site_name" content="Morgan Salhi">
+    <meta property="og:locale" content="fr_FR">
     <meta property="og:title" content="Projet TechNova - Cybersécurité AD | Morgan Salhi">
     <meta property="og:description"
         content="Refonte sécurisée d'une infrastructure Active Directory. Durcissement, Tiering Model, PingCastle et Purple Knight.">
     <meta property="og:image" content="https://morgansalhi.fr/assets/img/Logo_Integris.png">
     <meta property="og:url" content="https://morgansalhi.fr/projet-technova">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projet TechNova - Cybersécurité AD | Morgan Salhi">
+    <meta name="twitter:description"
+        content="Refonte sécurisée d'une infrastructure Active Directory. Durcissement, Tiering Model, PingCastle et Purple Knight.">
+    <meta name="twitter:image" content="https://morgansalhi.fr/assets/img/Logo_Integris.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap"
         rel="stylesheet">
@@ -39,16 +50,16 @@
 
     <header class="header">
         <nav class="navbar container">
-            <a href="index" class="logo"
+            <a href="/" class="logo"
                 style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
                 <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="index">Accueil</a></li>
-                <li><a href="projets">Retour aux projets</a></li>
-                <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/projets">Retour aux projets</a></li>
+                <li><a href="/#contact" class="btn-primary">Me contacter</a></li>
             </ul>
-            <div class="burger">
+            <div class="burger" role="button" tabindex="0" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="primary-nav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -148,7 +159,8 @@
                 <div class="project-gallery">
                     <div class="image-wrapper">
                         <img src="assets/img/architecture-ad.png"
-                            alt="Schéma de l'architecture logicielle Active Directory et du Tiering Model">
+                            alt="Schéma de l'architecture logicielle Active Directory et du Tiering Model"
+                            loading="lazy">
                         <p class="caption">Architecture du POC</p>
                     </div>
                 </div>
@@ -183,14 +195,15 @@
 
                     <div class="image-wrapper" style="flex: 1; min-width: 300px; height: fit-content;">
                         <img src="assets/img/pingcastle.png"
-                            alt="Rapport d'audit de sécurité PingCastle affichant un score parfait de 0">
+                            alt="Rapport d'audit de sécurité PingCastle affichant un score parfait de 0"
+                            loading="lazy">
                         <p class="caption">Score <strong>PingCastle : 0</strong> (Aucune anomalie critique)</p>
                     </div>
 
                     <div class="image-wrapper" style="flex: 1; min-width: 300px; height: fit-content;">
                         <img src="assets/img/purpleknight.png"
                             alt="Dashboard de l'outil Purple Knight affichant un score de sécurité de 96%"
-                            style="object-fit: contain;">
+                            style="object-fit: contain;" loading="lazy">
                         <p class="caption">Score <strong>Purple Knight : 96%</strong> sur l'identité</p>
                     </div>
 
@@ -226,6 +239,10 @@
 
     <footer class="footer">
         <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/morgan-salhi/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.credly.com/users/salhi-morgan/badges#credly" target="_blank" rel="noopener">Certifications</a>
+            </div>
             <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
         </div>
     </footer>

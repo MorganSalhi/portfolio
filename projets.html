@@ -8,9 +8,14 @@
     <title>Tous mes Projets | Morgan Salhi</title>
     <meta name="description"
         content="Découvrez l'ensemble des projets réalisés par Morgan Salhi en Réseaux, Cybersécurité et Développement.">
+    <meta name="author" content="Morgan Salhi">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0d17">
 
     <link rel="canonical" href="https://morgansalhi.fr/projets">
 
+    <meta property="og:site_name" content="Morgan Salhi">
+    <meta property="og:locale" content="fr_FR">
     <meta property="og:title" content="Tous mes Projets | Morgan Salhi">
     <meta property="og:description"
         content="Découvrez l'ensemble des projets réalisés par Morgan Salhi en Réseaux, Cybersécurité et Développement.">
@@ -18,9 +23,15 @@
     <meta property="og:url" content="https://morgansalhi.fr/projets">
     <meta property="og:type" content="website">
 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tous mes Projets | Morgan Salhi">
+    <meta name="twitter:description"
+        content="Découvrez l'ensemble des projets réalisés par Morgan Salhi en Réseaux, Cybersécurité et Développement.">
+    <meta name="twitter:image" content="https://morgansalhi.fr/assets/img/morgansalhi.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap"
         rel="stylesheet">
@@ -38,17 +49,17 @@
 
     <header class="header">
         <nav class="navbar container">
-            <a href="index" class="logo"
+            <a href="/" class="logo"
                 style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
                 <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
             </a>
 
-            <ul class="nav-links">
-                <li><a href="index">Accueil</a></li>
-                <li><a href="index#portfolio">Retour</a></li>
-                <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/#portfolio">Retour</a></li>
+                <li><a href="/#contact" class="btn-primary">Me contacter</a></li>
             </ul>
-            <div class="burger">
+            <div class="burger" role="button" tabindex="0" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="primary-nav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -67,7 +78,8 @@
 
                     <article class="project-card">
                         <div class="card-image">
-                            <img src="assets/img/baie_reseau.png" alt="Architecture Réseau Cisco">
+                            <img src="assets/img/baie_reseau.png"
+                                alt="Topologie et architecture réseau sécurisée sous Cisco Packet Tracer">
                         </div>
                         <div class="card-content">
                             <div class="card-tags">
@@ -78,13 +90,14 @@
                             <h3 class="card-title">Architecture Réseau Complexe</h3>
                             <p class="card-desc">Conception et déploiement d'une architecture réseau communicante et
                                 sécurisée sous Cisco Packet Tracer.</p>
-                            <a href="projet-reseau" class="card-link">Voir le détail &rarr;</a>
+                            <a href="/projet-reseau" class="card-link">Voir le détail &rarr;</a>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="card-image">
-                            <img src="assets/img/Logo_Integris.png" alt="Architecture Active Directory TechNova">
+                            <img src="assets/img/Logo_Integris.png"
+                                alt="Logo du projet TechNova : durcissement et tiering Active Directory">
                         </div>
                         <div class="card-content">
                             <div class="card-tags">
@@ -95,7 +108,7 @@
                             <h3 class="card-title">Modernisation TechNova</h3>
                             <p class="card-desc">Conception sécurisée et durcissement d'une infrastructure Active
                                 Directory. Score Purple Knight : 96%.</p>
-                            <a href="projet-technova" class="card-link">Voir le détail &rarr;</a>
+                            <a href="/projet-technova" class="card-link">Voir le détail &rarr;</a>
                         </div>
                     </article>
 
@@ -115,7 +128,7 @@
                             <p class="card-desc">Provisionning automatisé (Packer/OpenTofu) et déploiement continu d'une
                                 infrastructure souveraine (HA, SSO Authentik, Vaultwarden) via Ansible.</p>
 
-                            <a href="projet-jackysdev" class="btn-primary"
+                            <a href="/projet-jackysdev" class="btn-primary"
                                 style="margin-top: auto; padding: 0.5rem 1rem; width: fit-content; display: inline-flex; align-items: center; gap: 8px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -133,7 +146,8 @@
 
                     <article class="project-card">
                         <div class="card-image">
-                            <img src="assets/img/thales.webp" alt="Projet Thales">
+                            <img src="assets/img/thales.webp"
+                                alt="Plateforme web Checklist développée pour Thales Alenia Space" loading="lazy">
                         </div>
                         <div class="card-content">
                             <div class="card-tags">
@@ -143,7 +157,7 @@
                             <h3 class="card-title">Partenariat Thales</h3>
                             <p class="card-desc">Solution technique sur mesure répondant aux exigences spécifiques de
                                 Thales Alenia Space.</p>
-                            <a href="projet-thales" class="card-link">Voir le détail &rarr;</a>
+                            <a href="/projet-thales" class="card-link">Voir le détail &rarr;</a>
                         </div>
                     </article>
 
@@ -161,7 +175,7 @@
                             <h3 class="card-title">Missions Pentest & Red Team</h3>
                             <p class="card-desc">Série d'audits intrusifs : Exploitation de vulnérabilités critiques
                                 (MS17-010, ProFTPD), injections SQL, et élévation de privilèges.</p>
-                            <a href="projet-pentest" class="card-link" aria-label="Voir les rapports de pentest">Voir
+                            <a href="/projet-pentest" class="card-link" aria-label="Voir les rapports de pentest">Voir
                                 les rapports
                                 &rarr;</a>
                         </div>
@@ -181,7 +195,7 @@
                             <h3 class="card-title">Laboratoire SOC & Défense</h3>
                             <p class="card-desc">Déploiement d'un SIEM et d'un IDS pour la détection d'intrusions
                                 (SambaCry, Bruteforce), et analyse dynamique de malwares via Sandbox.</p>
-                            <a href="projet-soc" class="card-link" aria-label="Voir le rapport du laboratoire SOC">Voir
+                            <a href="/projet-soc" class="card-link" aria-label="Voir le rapport du laboratoire SOC">Voir
                                 le
                                 rapport &rarr;</a>
                         </div>
@@ -189,7 +203,8 @@
                     <article class="project-card">
                         <div class="card-image">
                             <img src="assets/img/android.png"
-                                alt="Interface de l'application mobile Android Sleepy Tales développée en Java">
+                                alt="Interface de l'application mobile Android Sleepy Tales développée en Java"
+                                loading="lazy">
                         </div>
                         <div class="card-content">
                             <div class="card-tags">
@@ -199,14 +214,15 @@
                             <h3 class="card-title">App Sociale "Rêves"</h3>
                             <p class="card-desc">Réseau social mobile dédié au partage et à l'exploration des rêves.
                                 Gestion de base de données et UX/UI.</p>
-                            <a href="projet-android" class="card-link">Voir le détail &rarr;</a>
+                            <a href="/projet-android" class="card-link">Voir le détail &rarr;</a>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="card-image">
                             <img src="assets/img/video-youtube-880x528.webp"
-                                alt="Miniature de la vidéo d'analyse technique du ransomware WannaCry">
+                                alt="Miniature de la vidéo d'analyse technique du ransomware WannaCry"
+                                loading="lazy">
                         </div>
                         <div class="card-content">
                             <div class="card-tags">
@@ -216,14 +232,15 @@
                             <h3 class="card-title">Recherche Cyberattaques</h3>
                             <p class="card-desc">Vidéo pédagogique présentant une recherche approfondie sur les
                                 mécanismes de défense cyber.</p>
-                            <a href="projet-youtube" class="card-link">Voir le détail &rarr;</a>
+                            <a href="/projet-youtube" class="card-link">Voir le détail &rarr;</a>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="card-image">
                             <img src="assets/img/firefoxbanniere.jpg"
-                                alt="Page d'accueil du site web statique développé en HTML et CSS">
+                                alt="Page d'accueil du site web statique développé en HTML et CSS"
+                                loading="lazy">
                         </div>
                         <div class="card-content">
                             <div class="card-tags">
@@ -233,14 +250,15 @@
                             <h3 class="card-title">Site Web Collaboratif</h3>
                             <p class="card-desc">Création d'un site web mettant en lumière des passions communes.
                                 Travail sur le design et l'intégration.</p>
-                            <a href="projet-siteweb" class="card-link">Voir le détail &rarr;</a>
+                            <a href="/projet-siteweb" class="card-link">Voir le détail &rarr;</a>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="card-image">
                             <img src="assets/img/newsletter.png"
-                                alt="Article rédigé pour la newsletter de l'IUT Réseaux et Télécommunications">
+                                alt="Article rédigé pour la newsletter de l'IUT Réseaux et Télécommunications"
+                                loading="lazy">
                         </div>
                         <div class="card-content">
                             <div class="card-tags">
@@ -262,6 +280,10 @@
 
     <footer class="footer">
         <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/morgan-salhi/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.credly.com/users/salhi-morgan/badges#credly" target="_blank" rel="noopener">Certifications</a>
+            </div>
             <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
         </div>
     </footer>

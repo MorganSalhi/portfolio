@@ -8,19 +8,30 @@
     <title>Analyse WannaCry & Cyberattaques | Morgan Salhi</title>
     <meta name="description"
         content="Analyse de la cyberattaque WannaCry et rapport détaillé sur 10 incidents cyber majeurs (MGM Resorts, Pegasus...).">
+    <meta name="author" content="Morgan Salhi">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0d17">
 
     <link rel="canonical" href="https://morgansalhi.fr/projet-youtube">
 
+    <meta property="og:site_name" content="Morgan Salhi">
+    <meta property="og:locale" content="fr_FR">
     <meta property="og:title" content="Analyse WannaCry & Cyberattaques | Morgan Salhi">
     <meta property="og:description"
         content="Analyse de la cyberattaque WannaCry et rapport détaillé sur 10 incidents cyber majeurs (MGM Resorts, Pegasus...).">
     <meta property="og:image" content="https://morgansalhi.fr/assets/img/video-youtube-880x528.webp">
     <meta property="og:url" content="https://morgansalhi.fr/projet-youtube">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Analyse WannaCry & Cyberattaques | Morgan Salhi">
+    <meta name="twitter:description"
+        content="Analyse de la cyberattaque WannaCry et rapport détaillé sur 10 incidents cyber majeurs (MGM Resorts, Pegasus...).">
+    <meta name="twitter:image" content="https://morgansalhi.fr/assets/img/video-youtube-880x528.webp">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap"
         rel="stylesheet">
@@ -38,16 +49,16 @@
 
     <header class="header">
         <nav class="navbar container">
-            <a href="index" class="logo"
+            <a href="/" class="logo"
                 style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
                 <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="index">Accueil</a></li>
-                <li><a href="projets">Retour aux projets</a></li>
-                <li><a href="index#contact" class="btn-primary">Me contacter</a></li>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/projets">Retour aux projets</a></li>
+                <li><a href="/#contact" class="btn-primary">Me contacter</a></li>
             </ul>
-            <div class="burger">
+            <div class="burger" role="button" tabindex="0" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="primary-nav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -168,7 +179,8 @@
                 <div class="project-gallery">
                     <h2 class="section-title">Réalisation</h2>
                     <div class="image-wrapper">
-                        <img src="assets/img/youtube.jpg" alt="Miniature vidéo WannaCry">
+                        <img src="assets/img/youtube.jpg"
+                            alt="Miniature de la vidéo YouTube d'analyse du ransomware WannaCry" loading="lazy">
                         <p class="caption">Miniature vidéo WannaCry sur Youtube</p>
                     </div>
                 </div>
@@ -190,6 +202,10 @@
 
     <footer class="footer">
         <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/morgan-salhi/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.credly.com/users/salhi-morgan/badges#credly" target="_blank" rel="noopener">Certifications</a>
+            </div>
             <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
         </div>
     </footer>
