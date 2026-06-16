@@ -69,23 +69,29 @@
     <main style="padding-top: 120px; padding-bottom: 60px;">
         <section class="container">
             <h1 class="section-title">Parcours de Compétences</h1>
-            <p style="margin-bottom: 40px; color: var(--color-text-muted);">Voici une vue détaillée des compétences
-                techniques acquises lors de mes projets et expériences.</p>
+            <p style="margin-bottom: 40px; color: var(--color-text-muted);">Une vue détaillée des compétences
+                techniques acquises au fil de mes projets académiques, personnels et de mon alternance. Chaque
+                compétence est rattachée au(x) projet(s) concret(s) sur lequel elle a été mise en œuvre.</p>
 
+            <!-- ============ 1. CYBERSÉCURITÉ OFFENSIVE ============ -->
             <div class="detail-block">
                 <h2
                     style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="22" y1="12" x2="18" y2="12" />
+                        <line x1="6" y1="12" x2="2" y2="12" />
+                        <line x1="12" y1="6" x2="12" y2="2" />
+                        <line x1="12" y1="22" x2="12" y2="18" />
                     </svg>
-                    Cybersécurité (Red Team & Blue Team)
+                    Cybersécurité Offensive (Red Team)
                 </h2>
                 <ul class="detail-list">
                     <li>
-                        <strong>Sécurité Offensive (Pentest) :</strong> Exploitation de vulnérabilités (CVE EternalBlue,
-                        ProFTPD), injections SQL (Burp Suite, SQLmap), contournement de filtres et élévation de
-                        privilèges.
+                        <strong>Exploitation de vulnérabilités système :</strong> Exploitation de CVE critiques
+                        (<strong>EternalBlue / MS17-010</strong>, ProFTPD <em>mod_copy</em>) via Metasploit, à partir
+                        d'une phase d'énumération (Nmap, FTP anonyme).
                         <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                                 fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
@@ -93,14 +99,13 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="/projets" style="color: var(--color-primary);">Missions Pentest &
-                                    Red Team</a></em>
+                            <em>Appliqué sur : <a href="/projet-pentest" style="color: var(--color-primary);">Missions Pentest & Red Team</a></em>
                         </small>
                     </li>
                     <li>
-                        <strong>Supervision & SOC (Blue Team) :</strong> Déploiement et corrélation d'alertes via
-                        <strong>Wazuh (SIEM)</strong> et <strong>Suricata (IDS)</strong>. Analyse dynamique et
-                        comportementale de malwares en Sandbox (Any.Run).
+                        <strong>Sécurité applicative web :</strong> Injections SQL (Burp Suite, SQLmap), bypass
+                        d'authentification administrateur et contournement de filtres d'upload pour injection de code
+                        (Juice Shop).
                         <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                                 fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
@@ -108,14 +113,13 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="/projets" style="color: var(--color-primary);">Laboratoire SOC &
-                                    Défense</a></em>
+                            <em>Appliqué sur : <a href="/projet-pentest" style="color: var(--color-primary);">Missions Pentest & Red Team</a></em>
                         </small>
                     </li>
                     <li>
-                        <strong>Audit & Hardening Active Directory :</strong> Utilisation avancée de PingCastle et
-                        Purple Knight pour identifier les chemins d'attaque. Mise en place d'une architecture Zero Trust
-                        (Tiering Model).
+                        <strong>Élévation de privilèges :</strong> Manipulation de la variable d'environnement
+                        <code>$PATH</code> et création d'exécutables malveillants pour détourner des scripts privilégiés
+                        sous Linux.
                         <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                                 fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
@@ -123,8 +127,7 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="/projet-technova" style="color: var(--color-primary);">Projet
-                                    TechNova</a></em>
+                            <em>Appliqué sur : <a href="/projet-pentest" style="color: var(--color-primary);">Missions Pentest & Red Team</a></em>
                         </small>
                     </li>
                 </ul>
@@ -132,6 +135,137 @@
 
             <hr class="divider">
 
+            <!-- ============ 2. CYBERSÉCURITÉ DÉFENSIVE / SOC ============ -->
+            <div class="detail-block">
+                <h2
+                    style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                    Cybersécurité Défensive (Blue Team & SOC)
+                </h2>
+                <ul class="detail-list">
+                    <li>
+                        <strong>Supervision & SIEM :</strong> Déploiement de <strong>Wazuh</strong> en environnement
+                        Dockerisé, remontée d'agents et corrélation d'alertes natives (Brute Force web, exploit
+                        SambaCry).
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-soc" style="color: var(--color-primary);">Laboratoire SOC & Défense</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Détection d'intrusion réseau (IDS) :</strong> Configuration de <strong>Suricata</strong>,
+                        écriture et optimisation de règles (détection de reverse shells, gestion de la casse et des
+                        limites des expressions régulières).
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-soc" style="color: var(--color-primary);">Laboratoire SOC & Défense</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Détection runtime Cloud Native :</strong> Déploiement de <strong>Falco</strong> (CNCF) en
+                        DaemonSet sur Kubernetes pour observer les syscalls via <strong>eBPF</strong>, capture et analyse
+                        d'alertes, puis tuning des règles pour réduire les faux positifs avant production.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-falco" style="color: var(--color-primary);">Détection Runtime Falco</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Analyse de malware :</strong> Étude dynamique et comportementale d'exécutables
+                        malveillants en sandbox (<em>Any.Run</em>), suivi des anomalies système et recommandations de
+                        remédiation.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-soc" style="color: var(--color-primary);">Laboratoire SOC & Défense</a></em>
+                        </small>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="divider">
+
+            <!-- ============ 3. SÉCURITÉ DES IDENTITÉS & AD ============ -->
+            <div class="detail-block">
+                <h2
+                    style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    </svg>
+                    Sécurité des Identités & Active Directory
+                </h2>
+                <ul class="detail-list">
+                    <li>
+                        <strong>Durcissement & Audit AD :</strong> Architecture "Secure by Design" avec
+                        <strong>Tiering Model</strong> Microsoft, PAW (Privileged Access Workstation) et durcissement par
+                        GPO. Validation par <strong>PingCastle</strong> (score 0) et <strong>Purple Knight</strong>
+                        (score 96 %).
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-technova" style="color: var(--color-primary);">Modernisation TechNova</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Haute disponibilité de l'annuaire :</strong> Déploiement de 3 contrôleurs de domaine
+                        synchronisés et approche Zero Trust pour cloisonner les accès administratifs.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-technova" style="color: var(--color-primary);">Modernisation TechNova</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Administration hybride :</strong> Gestion quotidienne des identités et des droits
+                        d'accès sur Active Directory on-premise et <strong>Azure AD</strong>.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué en : <a href="/#experience" style="color: var(--color-primary);">Alternance iSelection</a></em>
+                        </small>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="divider">
+
+            <!-- ============ 4. RÉSEAUX & INFRASTRUCTURES ============ -->
             <div class="detail-block">
                 <h2
                     style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
@@ -146,8 +280,9 @@
                 </h2>
                 <ul class="detail-list">
                     <li>
-                        <strong>Interconnexion Multi-sites :</strong> Configuration de tunnels VPN IPsec, routage OSPF
-                        et segmentation VLANs complexes.
+                        <strong>Architecture & segmentation :</strong> Conception d'une architecture segmentée en
+                        VLANs pour isoler les zones de sécurité, avec routage dynamique <strong>OSPF</strong> pour
+                        l'interconnexion multi-sites.
                         <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                                 fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
@@ -155,13 +290,12 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="/projet-reseau" style="color: var(--color-primary);">Architecture
-                                    Cisco</a></em>
+                            <em>Appliqué sur : <a href="/projet-reseau" style="color: var(--color-primary);">Architecture Réseau Cisco</a></em>
                         </small>
                     </li>
                     <li>
-                        <strong>Sécurisation Périmétrique :</strong> Implémentation de pare-feux Cisco ASA, NAT et
-                        règles de filtrage (ACLs).
+                        <strong>Sécurisation périmétrique :</strong> Mise en place de pare-feux <strong>Cisco ASA</strong>,
+                        tunnels <strong>VPN IPsec</strong>, NAT, AAA et règles de filtrage (ACLs).
                         <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                                 fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
@@ -169,43 +303,12 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="/projet-reseau" style="color: var(--color-primary);">Architecture
-                                    Cisco</a></em>
-                        </small>
-                    </li>
-                </ul>
-            </div>
-
-            <hr class="divider">
-
-            <div class="detail-block">
-                <h2
-                    style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="16 18 22 12 16 6" />
-                        <polyline points="8 6 2 12 8 18" />
-                    </svg>
-                    Systèmes, Cloud & Dév
-                </h2>
-                <ul class="detail-list">
-                    <li>
-                        <strong>Administration Hybride :</strong> Gestion des identités sur Active Directory on-premise
-                        et Azure AD.
-                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            </svg>
-                            <em>Appliqué en : <a href="/#experience" style="color: var(--color-primary);">Alternance
-                                    iSelection</a></em>
+                            <em>Appliqué sur : <a href="/projet-reseau" style="color: var(--color-primary);">Architecture Réseau Cisco</a></em>
                         </small>
                     </li>
                     <li>
-                        <strong>Développement Fullstack & Scripting :</strong> Création d'outils d'exportation de
-                        données et interfaces de gestion sécurisées.
+                        <strong>Services réseau essentiels :</strong> Déploiement de serveurs DHCP, DNS et IPBX, et mise
+                        en œuvre de mécanismes de sauvegarde pour une infrastructure robuste.
                         <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                                 fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
@@ -213,9 +316,7 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="/projet-thales" style="color: var(--color-primary);">Projet
-                                    Thales</a> et <a href="/projet-android" style="color: var(--color-primary);">App
-                                    Android</a></em>
+                            <em>Appliqué sur : <a href="/projet-reseau" style="color: var(--color-primary);">Architecture Réseau Cisco</a></em>
                         </small>
                     </li>
                 </ul>
@@ -223,28 +324,24 @@
 
             <hr class="divider">
 
+            <!-- ============ 5. DEVSECOPS & CLOUD NATIVE ============ -->
             <div class="detail-block">
                 <h2
                     style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21.16 11.23a4 4 0 0 0-5.45-3.05 4.5 4.5 0 0 0-8.5.58 3.5 3.5 0 0 0-1.8 6.55"></path>
-                        <path d="M12 2v2"></path>
-                        <path d="M12 20v2"></path>
-                        <path d="M4.93 4.93l1.41 1.41"></path>
-                        <path d="M17.66 17.66l1.41 1.41"></path>
-                        <path d="M2 12h2"></path>
-                        <path d="M20 12h2"></path>
-                        <path d="M4.93 19.07l1.41-1.41"></path>
-                        <path d="M17.66 6.34l1.41-1.41"></path>
+                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                        <line x1="6" y1="6" x2="6.01" y2="6" />
+                        <line x1="6" y1="18" x2="6.01" y2="18" />
                     </svg>
-                    DevSecOps & Infrastructure as Code (IaC)
+                    DevSecOps, Conteneurs & Cloud Native
                 </h2>
                 <ul class="detail-list">
                     <li>
-                        <strong>Provisionning Automatisé :</strong> Création de Golden Images via
-                        <strong>Packer</strong> et déploiement d'infrastructures cloud/virtualisées via <strong>OpenTofu
-                            (Terraform)</strong>.
+                        <strong>Infrastructure as Code (IaC) :</strong> Création de Golden Images via
+                        <strong>Packer</strong> et provisionning déclaratif d'infrastructures via
+                        <strong>OpenTofu (Terraform)</strong>.
                         <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                                 fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
@@ -252,14 +349,13 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="/projet-jackysdev" style="color: var(--color-primary);">Architecture
-                                    IaC (Jacky's Dev)</a></em>
+                            <em>Appliqué sur : <a href="/projet-jackysdev" style="color: var(--color-primary);">Architecture IaC (Jacky's Dev)</a></em>
                         </small>
                     </li>
                     <li>
-                        <strong>Gestion de Configuration :</strong> Écriture de playbooks <strong>Ansible</strong> pour
-                        la configuration dynamique de serveurs, l'installation de Docker, et la gestion de la Haute
-                        Disponibilité (HA) et Réplication SQL.
+                        <strong>Gestion de configuration & HA :</strong> Écriture de playbooks <strong>Ansible</strong>
+                        idempotents (installation Docker, paramétrage applicatif), avec Loadbalancer et réplication SQL
+                        maître/esclave pour la Haute Disponibilité. Validation par tests Python (Pytest / TDD).
                         <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                                 fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
@@ -267,13 +363,26 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="/projet-jackysdev" style="color: var(--color-primary);">Architecture
-                                    IaC (Jacky's Dev)</a></em>
+                            <em>Appliqué sur : <a href="/projet-jackysdev" style="color: var(--color-primary);">Architecture IaC (Jacky's Dev)</a></em>
                         </small>
                     </li>
                     <li>
-                        <strong>Auto-Hébergement & Souveraineté :</strong> Déploiement sécurisé de solutions open-source
-                        orientées vie privée : <strong>Authentik (SSO)</strong>, Vaultwarden, SimpleLogin, Gitea et
+                        <strong>Orchestration Kubernetes :</strong> Déploiement de clusters (Kind), gestion de
+                        <strong>DaemonSets</strong> et packaging applicatif via <strong>Helm</strong>, avec compréhension
+                        de la chaîne de sécurité K8s (scan d'images, admission control, détection runtime).
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-falco" style="color: var(--color-primary);">Détection Runtime Falco</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Auto-hébergement & souveraineté :</strong> Déploiement sécurisé de solutions open-source
+                        orientées vie privée : <strong>Authentik (SSO)</strong>, Vaultwarden, Gitea, SimpleLogin et
                         routage Tor.
                         <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
@@ -282,8 +391,196 @@
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
-                            <em>Appliqué sur : <a href="/projet-jackysdev" style="color: var(--color-primary);">Architecture
-                                    IaC (Jacky's Dev)</a></em>
+                            <em>Appliqué sur : <a href="/projet-jackysdev" style="color: var(--color-primary);">Architecture IaC (Jacky's Dev)</a></em>
+                        </small>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="divider">
+
+            <!-- ============ 6. DÉVELOPPEMENT & BASES DE DONNÉES ============ -->
+            <div class="detail-block">
+                <h2
+                    style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                    </svg>
+                    Développement & Bases de Données
+                </h2>
+                <ul class="detail-list">
+                    <li>
+                        <strong>Développement Fullstack sécurisé :</strong> Application web (PHP / JS / CSS) avec filtres
+                        dynamiques, gestion fine des rôles (Opérateur, Administrateur, Super-Admin), chiffrement des mots
+                        de passe et journalisation des actions (logs).
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-thales" style="color: var(--color-primary);">Projet Thales</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Scripting & génération de documents :</strong> Module backend <strong>Python</strong>
+                        dédié à l'export automatique des données aux formats Excel (.csv) et PDF.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-thales" style="color: var(--color-primary);">Projet Thales</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Bases de données :</strong> Modélisation et gestion centralisée via MySQL / phpMyAdmin
+                        (utilisateurs, programmes, historique), et communication client-serveur HTTP avec une base
+                        distante.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-thales" style="color: var(--color-primary);">Projet Thales</a> · <a href="/projet-android" style="color: var(--color-primary);">App Android</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Développement mobile (Android) :</strong> Application native en <strong>Java</strong>
+                        (Android Studio), interfaces XML responsive, authentification et requêtes HTTP (GET/POST) avec
+                        gestion des erreurs réseau.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-android" style="color: var(--color-primary);">App Sociale "Rêves"</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Intégration web from scratch :</strong> Maîtrise du HTML5 sémantique et du CSS3 (Flexbox),
+                        sans CMS ni framework, avec une identité visuelle cohérente.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-siteweb" style="color: var(--color-primary);">Site Web Collaboratif</a></em>
+                        </small>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="divider">
+
+            <!-- ============ 7. ADMINISTRATION SYSTÈME & SUPPORT ============ -->
+            <div class="detail-block">
+                <h2
+                    style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="12" cy="12" r="4" />
+                        <line x1="4.93" y1="4.93" x2="9.17" y2="9.17" />
+                        <line x1="14.83" y1="14.83" x2="19.07" y2="19.07" />
+                        <line x1="14.83" y1="9.17" x2="19.07" y2="4.93" />
+                        <line x1="4.93" y1="19.07" x2="9.17" y2="14.83" />
+                    </svg>
+                    Administration Système & Support IT
+                </h2>
+                <ul class="detail-list">
+                    <li>
+                        <strong>Support N1 & N2 :</strong> Diagnostic et résolution d'incidents utilisateurs via une
+                        plateforme de ticketing (<em>Samanage</em> / SolarWinds).
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué en : <a href="/#experience" style="color: var(--color-primary);">Alternance iSelection</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Gestion de parc & déploiement :</strong> Préparation, déploiement et maintenance des
+                        postes de travail et périphériques, participation à l'amélioration continue des processus.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué en : <a href="/#experience" style="color: var(--color-primary);">Alternance iSelection</a></em>
+                        </small>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="divider">
+
+            <!-- ============ 8. VEILLE, COMMUNICATION & GESTION DE PROJET ============ -->
+            <div class="detail-block">
+                <h2
+                    style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                    </svg>
+                    Veille, Communication & Gestion de Projet
+                </h2>
+                <ul class="detail-list">
+                    <li>
+                        <strong>Veille & analyse de menaces :</strong> Étude approfondie de cyberattaques majeures
+                        (WannaCry, EternalBlue, Pegasus, MGM Resorts…), avec analyse du mode opératoire et des bonnes
+                        pratiques de réponse à incident.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-youtube" style="color: var(--color-primary);">Recherche Cyberattaques</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Vulgarisation & rédaction :</strong> Production de contenu pédagogique (vidéo
+                        YouTube) et rédaction d'articles publiés (newsletter de l'IUT R&T).
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-youtube" style="color: var(--color-primary);">Recherche Cyberattaques</a> · <a href="assets/docs/newsletter-salhi.pdf" target="_blank" style="color: var(--color-primary);">Newsletter</a></em>
+                        </small>
+                    </li>
+                    <li>
+                        <strong>Gestion de projet & travail d'équipe :</strong> Conduite de projets en équipe avec
+                        répartition des rôles (matrice RACI), documentation technique et soutenances orales.
+                        <br><small style="display: inline-flex; align-items: center; gap: 5px; margin-top: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <em>Appliqué sur : <a href="/projet-thales" style="color: var(--color-primary);">Projet Thales</a> · <a href="/projet-technova" style="color: var(--color-primary);">TechNova</a></em>
                         </small>
                     </li>
                 </ul>
