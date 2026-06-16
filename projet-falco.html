@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Détection Runtime Falco sur Kubernetes (eBPF) | Morgan Salhi</title>
+    <meta name="description"
+        content="Déploiement de Falco (CNCF) sur un cluster Kubernetes pour détecter en temps réel les menaces runtime via eBPF. Analyse d'alertes et tuning de règles.">
+    <meta name="author" content="Morgan Salhi">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0d17">
+
+    <link rel="canonical" href="https://morgansalhi.fr/projet-falco">
+
+    <meta property="og:site_name" content="Morgan Salhi">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:title" content="Détection Runtime Falco sur Kubernetes (eBPF) | Morgan Salhi">
+    <meta property="og:description"
+        content="Déploiement de Falco (CNCF) sur un cluster Kubernetes pour détecter en temps réel les menaces runtime via eBPF. Analyse d'alertes et tuning de règles.">
+    <meta property="og:image" content="https://morgansalhi.fr/assets/img/falco.png">
+    <meta property="og:url" content="https://morgansalhi.fr/projet-falco">
+    <meta property="og:type" content="article">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Détection Runtime Falco sur Kubernetes (eBPF) | Morgan Salhi">
+    <meta name="twitter:description"
+        content="Déploiement de Falco (CNCF) sur un cluster Kubernetes pour détecter en temps réel les menaces runtime via eBPF. Analyse d'alertes et tuning de règles.">
+    <meta name="twitter:image" content="https://morgansalhi.fr/assets/img/falco.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="/" class="logo"
+                style="font-family: 'Fira Code', monospace; font-weight: 700; font-size: 1.2rem;">
+                <span style="color: var(--color-primary);">root@morgan</span>:~$ <span class="blink">_</span>
+            </a>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/projets">Retour aux projets</a></li>
+                <li><a href="/#contact" class="btn-primary">Me contacter</a></li>
+            </ul>
+            <div class="burger" role="button" tabindex="0" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <span class="tag">Runtime Security & Cloud Native</span>
+                <h1 class="hero-title">Détection Runtime Falco</h1>
+                <p class="project-subtitle">Observation en temps réel des syscalls via eBPF et détection de
+                    comportements anormaux dans un cluster Kubernetes</p>
+
+                <div style="margin-top: 35px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+                    <a href="https://github.com/MorganSalhi/tpjacky" target="_blank" rel="noopener"
+                        class="btn-primary" style="display: flex; align-items: center; gap: 10px; margin: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                        Voir le code source (GitHub)
+                    </a>
+
+                    <a href="assets/docs/SALHI_MORGAN_PROJET.pptx" target="_blank" class="btn-secondary"
+                        style="display: flex; align-items: center; gap: 10px; margin: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Voir la présentation (PPTX)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details section-padding">
+            <div class="container">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Contexte et Objectifs</h2>
+                    <p>
+                        Réalisé dans le cadre d'une <strong>SAE de BUT3 Cybersécurité</strong> à l'IUT de Nice —
+                        Sophia Antipolis, ce projet académique noté avait pour but de déployer et d'instrumenter un
+                        cluster Kubernetes avec <strong>Falco</strong>, un projet <em>CNCF graduated</em> dédié à la
+                        détection de menaces au runtime.
+                    </p>
+                    <p>
+                        L'enjeu : comprendre la place d'un outil de détection runtime dans une chaîne de sécurité
+                        Kubernetes, capturer de véritables alertes de sécurité, puis étudier le bruit généré par les
+                        règles par défaut afin de mesurer le besoin de tuning avant une mise en production.
+                    </p>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Détection vs Prévention : la défense en profondeur</h2>
+                    <p>
+                        Falco ne se substitue pas aux contrôles existants : il complète la chaîne de sécurité K8s en
+                        agissant <strong>au moment de l'exécution</strong>, là où les outils en amont n'ont plus de
+                        visibilité. Il s'inscrit ainsi dans une logique de défense en profondeur :
+                    </p>
+                    <ul class="detail-list">
+                        <li>
+                            <strong>En amont — Scan d'images (ex. Trivy) :</strong> détection des vulnérabilités
+                            <em>avant</em> le déploiement, sur les images de conteneurs.
+                        </li>
+                        <li>
+                            <strong>À l'admission — Admission control (ex. Kyverno) :</strong> application de politiques
+                            (prévention) au moment où un pod est admis dans le cluster.
+                        </li>
+                        <li>
+                            <strong>Au runtime — Falco :</strong> observation en continu des <em>syscalls</em> via eBPF
+                            pour détecter ce qui se passe réellement dans les conteneurs une fois en exécution.
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Stack technique & Déploiement</h2>
+                    <p>
+                        L'ensemble de l'environnement a été monté sur un <strong>GitHub Codespace</strong> (Ubuntu,
+                        kernel <code>6.8.0-1052-azure</code>), garantissant un lab reproductible et jetable :
+                    </p>
+                    <ul class="detail-list">
+                        <li>
+                            <strong>Cluster :</strong> Kind v0.23.0 (1 control-plane), Docker 29.3.0,
+                            kubectl v1.36.2, Helm v3.21.1.
+                        </li>
+                        <li>
+                            <strong>Falco :</strong> déployé en <strong>DaemonSet</strong> via le chart officiel
+                            <code>falcosecurity/falco</code> — un agent par nœud pour une couverture complète.
+                        </li>
+                        <li>
+                            <strong>Driver :</strong> <code>modern_ebpf</code>, qui exige un kernel hôte ≥ 5.8 (vérifié
+                            via <code>uname -r</code> avant le <code>helm install</code>).
+                        </li>
+                        <li>
+                            <strong>Observabilité :</strong> Falcosidekick + Falcosidekick-UI (port-forward 2802) pour
+                            le fan-out des alertes vers Slack, webhook ou SIEM.
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Réalisations concrètes</h2>
+                    <p>
+                        Le cluster a été rendu opérationnel avec Falco en état <strong>2/2 Running, 0 restart</strong>.
+                        Trois alertes représentatives ont été déclenchées et analysées sur un pod <code>busybox</code>
+                        de test :
+                    </p>
+                    <ul class="detail-list">
+                        <li>
+                            <strong>Warning — <em>Sensitive file opened for reading by non-trusted program</em> :</strong>
+                            lecture d'un fichier sensible (<code>cat /etc/shadow</code>).
+                        </li>
+                        <li>
+                            <strong>Critical — <em>Executing binary not part of base image</em> :</strong> exécution
+                            d'un binaire (<code>mount</code>) absent de l'image de base au démarrage.
+                        </li>
+                        <li>
+                            <strong>Notice — <em>A shell was spawned in a container with an attached terminal</em> :</strong>
+                            ouverture d'un shell avec terminal attaché (TTY 34816).
+                        </li>
+                    </ul>
+                    <p>
+                        Falcosidekick-UI a été déployé pour centraliser et rediffuser ces alertes, et l'ensemble a été
+                        synthétisé dans une <strong>présentation de soutenance de 14 slides</strong>.
+                    </p>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Défis techniques résolus</h2>
+                    <p>
+                        Au-delà du déploiement, ce projet a mis en lumière plusieurs subtilités propres à l'exploitation
+                        d'un outil de sécurité runtime :
+                    </p>
+                    <ul class="detail-list">
+                        <li>
+                            <strong>Compatibilité du driver eBPF :</strong> <code>modern_ebpf</code> impose un kernel
+                            hôte ≥ 5.8. Vérification systématique via <code>uname -r</code> en amont du
+                            <code>helm install</code> pour éviter un échec silencieux du DaemonSet.
+                        </li>
+                        <li>
+                            <strong>Le paradoxe des privilèges :</strong> Falco requiert <code>privileged: true</code>
+                            et <code>hostPID</code> — un outil de sécurité avec une forte surface d'attaque. À mitiger en
+                            production par des <em>NetworkPolicies</em>, un RBAC strict et le scan de l'image de Falco
+                            elle-même.
+                        </li>
+                        <li>
+                            <strong>La règle « Terminal shell » silencieuse :</strong> la règle exige
+                            <code>proc.tty != 0</code>. Un <code>kubectl exec -it</code> lancé depuis un shell non
+                            interactif (CI) laisse <code>tty=0</code> et ne déclenche rien. Solution : encapsulation via
+                            <code>script -q -c "kubectl exec -it ..."</code> pour forcer un vrai pseudo-TTY.
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="divider">
+
+                <div class="detail-block">
+                    <h2 class="section-title">Résultat marquant : le tuning, un prérequis</h2>
+                    <p>
+                        L'observation a fourni un argument chiffré en faveur du tuning des règles avant tout déploiement
+                        réel :
+                    </p>
+                </div>
+
+                <div
+                    style="background-color: rgba(255, 255, 255, 0.05); border-left: 4px solid var(--color-primary); padding: 20px; margin-top: 15px; margin-bottom: 40px; border-radius: 4px;">
+                    <p style="margin: 0; font-size: 1rem; line-height: 1.7;">
+                        Sur <strong>24 h d'observation, 100 % des alertes Critical</strong> générées par les règles par
+                        défaut étaient des <strong>faux positifs</strong> liés à mon propre outillage légitime
+                        (<code>kubectl</code>, <code>ugrep</code>, Claude Code). Une démonstration concrète que le tuning
+                        des règles — exclusion par <code>proc.name</code>, déclaration d'images de confiance — est un
+                        prérequis indispensable avant toute mise en production.
+                    </p>
+                </div>
+
+                <div class="competencies-box" style="margin-top: 50px;">
+                    <h3>Compétences & Concepts Mobilisés</h3>
+                    <div class="tags-container">
+                        <span class="skill-tag">Runtime Security / Blue Team</span>
+                        <span class="skill-tag">Kubernetes (DaemonSet)</span>
+                        <span class="skill-tag">Falco (CNCF)</span>
+                        <span class="skill-tag">eBPF</span>
+                        <span class="skill-tag">Helm</span>
+                        <span class="skill-tag">Kind</span>
+                        <span class="skill-tag">Falcosidekick</span>
+                        <span class="skill-tag">Détection vs Prévention</span>
+                        <span class="skill-tag">Analyse & Tuning de règles</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/morgan-salhi/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.credly.com/users/salhi-morgan/badges#credly" target="_blank" rel="noopener">Certifications</a>
+            </div>
+            <p class="copyright">&copy; 2026 Morgan Salhi. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

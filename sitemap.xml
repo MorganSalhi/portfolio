@@ -41,6 +41,11 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://morgansalhi.fr/projet-falco</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://morgansalhi.fr/projet-thales</loc>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
