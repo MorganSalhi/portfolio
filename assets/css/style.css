@@ -716,6 +716,12 @@ svg {
 
 .detail-list strong {
     color: #fff;
+}
+
+/* Seul le libellé en tête de puce passe en bloc ; les <strong> inline
+   (noms d'outils en plein texte) restent dans le flux pour éviter les
+   retours à la ligne intempestifs. */
+.detail-list li > strong:first-child {
     display: block;
     margin-bottom: 5px;
 }
